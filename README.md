@@ -1,108 +1,247 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+:desktop_computer: [Live Website] () 
+:open_file_folder: [Github Repository] ()
 
-Welcome USER_NAME,
+# User Experience
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+### Agile
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+I implemented agile methodology when creating this website. The link to the project board can be found [here] ()
 
-## Gitpod Reminders
+### User Stories
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+HomePage <strong><u>(Not logged in)</u></strong>
 
-`python3 -m http.server`
+- As a user I want to be able to tell what the website is about.
+- As a user I want to see the products.
+- As a user I want to be able to buy products.
+- As a user I want to be able to register.
+- As a user I want to be able to login. 
 
-A blue button should appear to click: _Make Public_,
+Homepage <strong><u>(Logged in) </u></strong>
+- As a user I want to be able to buy products.
+- As a user I want to be able to logout.
 
-Another blue button should appear to click: _Open Browser_.
+Register
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- As a user I want to be able to register.
+- I want to recieve a notification that I have registered.
 
-A blue button should appear to click: _Make Public_,
+Login Page
 
-Another blue button should appear to click: _Open Browser_.
+- As a user I want to be able to login with username and password.
+- As a user I want to have the option of remembering me indtead of having to login.
+- I want to recieve a notification that I have logged in.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Logout Page
 
-To log into the Heroku toolbelt CLI:
+- As a user I want to be able to logout.
+- I want to recieve a notification that I have logged out.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Product Detail Page
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- I want to be able to see the product.
+- I want to see the details of the product.
+- I want to be able to choose the sizes. 
+- I want to be able to add it to my shopping bag.
 
-------
+Profile Page
 
-## Release History
+- I want to be able to have my details saved.
+- I want to be able to update my details. 
+- I want to be able to see past orders.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Shopping Bag Page
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- I want to be able to see what's in my shopping bag.
+- I want to be able to update quantity in my shopping bag.
+- I want to be able to remove from my shopping bag. 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Admin Page
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+<i>To access the admin page type <strong>/admin</strong> at the end of the address bar</i>
+- As an admin I want to be able to add posts.
+- As an admin I want to be able to approve or not approve posts.
+- As an admin I want to be able to approve or not approve comments. 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+# Features 
+## Navigation
+## Header
+## Footer
+## Register
+## Logout
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## <u>Future Features</u>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+# Typography and Color Scheme
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## <u>Font</u>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## <u>Color Scheme</u>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## <strong>Wireframes</strong>
+### Home Page
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Registration Page
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Login Page
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Logout Page
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Product Detail Page
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Shopping Bag Page
 
-------
+### Profile Page
 
-## FAQ about the uptime script
+<br>
 
-**Why have you added this script?**
+# <strong>Technologies</strong>
+### <u>Languages used</u>
+- [HTML](https://en.wikipedia.org/wiki/HTML5) - Add content and formatting to web page.
+- [CSS](https://en.wikipedia.org/wiki/CSS) - Add styling and colours to web page.
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - Add interactive features to web page.
+- [Django](https://en.wikipedia.org/wiki/Django_(web_framework)) - A Python-based web framework that follows the model–template–views (MTV) architectural pattern. 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### <u>Frameworks, Libraries and Programs Used</u>
 
-**How will this affect me?**
+- [Gitpod](https://gitpod.io/) - web-based editor optimised for debugging, testing, syntax highlighting and extension support.
+- [Git](https://git-scm.com/) - used to allow for tracking of any changes in the code and for the version control.
+- [Github](https://github.com/) - used to host the project files and host webpage onto the internet.
+- [Heroku](https://www.heroku.com/) - A cloud platform service that supports several programming languages.
+- [ElephantSQL](https://www.elephantsql.com/) - Also known as postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance.
+- [Fontawesome](https://fontawesome.com/) - to insert icons in the website to make site more visually appealing and easy to navigate.
+- [Google Fonts](https://fonts.google.com/) - used to import fonts in the style.css stylesheet.
+- [Favicon](https://favicon.io/) - to insert icons in the website to make site more visually appealing.
+- [bootstrap-clean-blog](https://github.com/StartBootstrap/startbootstrap-clean-blog) - A bootstrap blog template imported in for CSS.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## <strong>Testing</strong>
+- [W3C Markup Validation Serice](https://validator.w3.org/) was used to test for error codes in the HTML.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)  was used to test for error codes in the CSS.
+- [CI Python Linter](https://pep8ci.herokuapp.com/) was used to detect errors and potential problems in Python code.
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+    was used during the development process to test, debug, explore and modify HTML elements, and to test responsiveness in different screen sizes.
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used for improving the quality of web page. It has audits for performance, accessibility, progressive web apps, SEO, and more.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### <u>JShint</u>
+I did not perform any validation on javascript as all the javascript was imported in from [clean blog](https://github.com/StartBootstrap/startbootstrap-clean-blog).
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### <u>W3C Markup Validation Serice</u>
+No errors were recieved on the pages except for the post detail page which recieved one error.
+|Error |Error explanation| Code |
+| ------------- | ------------- |------------- |
+|  |  | |
 
-**So….?**
+### <u>W3C CSS Validator</u>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+### <u>Code Institute Python Linter</u>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### <u>Lighthouse</u>
+|Page | Mobile  | Computer|
+| ------------- | ------------- |------------- |
+| | |
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+### <u>Responsiveness</u>
+[Am I Responsive?](http://ami.responsivedesign.is/#) was used to check responsiveness of the site pages across different devices.
+ 
+ The site has been tested on various sizes such as those listed below.
+ 
+ <strong>Mobile:</strong>
+ 375x667 / 360x740 / 412x915 / 414x896
+ 
+ <strong>Tablet:</strong>
+ 768x1024 / 820x1180 / 912x1368 
+ 
+<strong>Monitor:</strong>
+ 1280x1024 / 1600x900 / 2560x1440 / 3440x1440
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### <u>Manual Testing</u>
+Browser Compatibility:
 
----
+Browser | Outcome | Pass/Fail 
+ --- | --- | ---
+Google Chrome | No appearance, responsiveness nor functionality issues.| 
+Safari | No appearance, responsiveness nor functionality issues. | 
+Microsoft Edge | No appearance, responsiveness nor functionality issues. | 
+Firefox | No appearance, responsiveness nor functionality issues. | 
 
-Happy coding!
+Device compatibility:
+
+Device | Outcome | Pass/Fail
+--- | --- | ---
+Laptop | No appearance, responsiveness nor functionality issues. | 
+ipad mini | No appearance, responsiveness nor functionality issues. | 
+Lenovo M1 Tab | No appearance, responsiveness nor functionality issues. | 
+Samsung s20 | No appearance, responsiveness nor functionality issues. | 
+iphone 12 pro | No appearance, responsiveness nor functionality issues. | 
+
+## <strong>Bugs</strong>
+
+### <u>Unsolved Bugs</u>
+
+### <u>Solved Bugs</u>
+
+## <strong>Deployment</strong>
+ 
+ ### <u>Github</u>
+
+This website was published using GitHub Pages.
+
+- Navigate to [GitHub](https://github.com/) and log in.
+
+- Navigate to your repositories and find the project you want to deploy
+
+- Under the name of your chosen Repository you will see a ribbon of selections, click on 'Settings' located on the right hand side.
+
+- Scroll down till you see 'Pages' heading on the left hand side
+
+- Under the 'Source' click on the dropdown and select 'master' or 'main' branch and click save
+
+- The page will reload and you'll see the link of your published page displayed under 'GitHub' pages.
+
+- It takes a few minutes for the site to be published, wait until the background of your link changes to a green color before trying to open it.
+
+- Congratulations you have deployed your project!
+ 
+ This website was written on Gitpod.
+ 
+ ### <u>Gitpod</u>
+ - Navigate to [Gitpod] through [GitHub](https://github.com/), [GitLab](https://www.gitlab.com/).
+- In the browser’s address bar, prefix the entire URL with gitpod.io/# and press Enter.
+- For example, gitpod.io/#https://github.com/gitpod-io/website
+- We recommend you install the Gitpod browser extension to make this a one-click operation.
+- Sign in with one of the listed providers and let the workspace start up.
+- Congratulations, you have started your first of many ephemeral developer environments!
+
+### <u>ElephantSQL</u>
+This website was hosted on elephantSQL.
+- Create a new app.
+- Add a name of the app. This name should be a name that helps you identify which application the instance is used by.
+- Select a plan: The plan you would like to have. I used <strong>Tiny Turtle Plan</strong>
+- Select tags: I left this field blank.
+- Select Region: I selected EU-West-1 (IRELAND).
+- Then click review.
+- Check that the details are correct tthen click <strong>"Create Instance"</strong>.
+- Return to the ElephantSQL dashboard and click on the database instance name for this project.
+- In the URL section, click the copy icon to copy the database URL which will then be put into the envy.py file in gitpod.
+
+### <u>Heroku</u>
+This website was deployed on Heroku. 
+* When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+
+    1. `heroku/python`
+    2. `heroku/nodejs`
+
+* You must then create a _Config Var_ called `PORT`. Set this to `8000`
+* If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+* Connect your GitHub repository and deploy as normal.
+
+## <strong>Credits</strong>
+### <u>Content</u>
+
+### <u>Code & Tutorials</u>
+
+### <u>Media</u>
+
+<strong><u>Images Used:</u></strong>
