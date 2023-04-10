@@ -1,6 +1,45 @@
 :desktop_computer: [Live Website] () 
 :open_file_folder: [Github Repository] ()
 
+**TABLE OF CONTENTS**
+* [USER EXPERIENCE](#user-experience)
+* [User Stories](#user-stories)
+* [Features](#features)
+    * [Navigation](##Navigation)
+    * [Header](##Header)
+    * [Footer](##Footer)
+    * [Register](##Register)
+    * [Logout](##Logout)
+
+* [Future Features](#ufuture-featuresu)
+* [Typographyand Color Scheme](#typography-and-color-scheme)
+    * [Font](##Font)
+    * [Color Scheme](##color)
+* [Technologies Used](#technologies-used)
+    * [Languages Used](#languages-used)
+    * [Frameworks Used](#frameworks-used)
+    * [Databases Used](#databases-used)
+    * [Libraries and Packages Used](#libraries-and-packages-used)
+    * [Programmes and Applications Used](#programmes-and-applications-used)
+    * [Cloud Application Platforms Used](#cloud-platforms-used)
+    * [Cloud Storage Services Used](#cloud-storage-services-used)
+* [Testing](#testing)
+* [Bugs, Issues and Solutions](#bugs-issues-and-solutions)
+* [Deployment and Local Development](#deployment-and-local-development)
+    * [Deployment](#deployment)
+        * [Github](#ugithubu)
+        * [Gitpod](#ugitpodu)
+        * [ElephantSQL](#uelephantsqlu)
+        * [Heroku](#uherokuu)
+* [Credits](#credits)
+    * [Content](#ucontentu)
+    * [Code & Tutoiral](#ucode--tutorialsu)
+    * [Media](#umediau)
+    * [Images Used:](#umediau)
+---
+
+
+
 # User Experience
 
 ### Agile
@@ -37,6 +76,12 @@ Logout Page
 - As a user I want to be able to logout.
 - I want to recieve a notification that I have logged out.
 
+Profile Page
+
+- I want to be able to have my details saved.
+- I want to be able to update my details. 
+- I want to be able to see past orders.
+
 Product Detail Page
 
 - I want to be able to see the product.
@@ -44,17 +89,17 @@ Product Detail Page
 - I want to be able to choose the sizes. 
 - I want to be able to add it to my shopping bag.
 
-Profile Page
-
-- I want to be able to have my details saved.
-- I want to be able to update my details. 
-- I want to be able to see past orders.
-
 Shopping Bag Page
 
 - I want to be able to see what's in my shopping bag.
 - I want to be able to update quantity in my shopping bag.
 - I want to be able to remove from my shopping bag. 
+
+Checkout Page
+
+- I want to be able to see what's in my bag.
+- I want to be able to write in my delivery address.
+- I want to be able to write in my card details securely. 
 
 Admin Page
 
@@ -64,11 +109,45 @@ Admin Page
 - As an admin I want to be able to approve or not approve comments. 
 
 # Features 
-## Navigation
+## Navigation Bar
+- Featured at the top of the page with the name of the website on the left.
+- The navigation bar also has a register, login, my Account and logout depending on if user is logged in. 
+- The navigation is also responsive to smaller screens with a toggle option on the navbar, which hides the links till tapped.
+
 ## Header
+- The header shows the name of the website <i>Days Coming</i>.
+- The header has a colorful background which is why I used an opac background with dark text to display the name of the website.
+- The image used as the background represents what the website is about.
+
 ## Footer
+- The footer has a link to facebook.
+- The footer has a link to Twitter.
+- The footer has a link to my github.
+
 ## Register
+- The register page has a form.
+- The form displays the details needed.
+- If username is already in use it will ask you to fill out form again.
+- Once you register you are re-directed to home page.
+
+## Login
+- The login page has a form.
+- The form displays where to type name and password.
+- The form also has an option to tick ✔️ remember me so they won't need to login the next time they visit the page.
+- If a user enters the incorrect username they will recieve an error.
+
 ## Logout
+- A user is asked if they are sure they want to logout.
+- After clicking <i>signout</i> they are redirected to the home page.
+
+### <u>Product Detail</u>
+- The product detail page displays the description of the product.
+- The product detail page displays an image of the product.
+- The product detail pay displays the price. 
+
+<u><strong>When user is logged in:</strong></u>
+- The post has two buttons underneath displaying the likes and dislikes. <br>
+
 
 ## <u>Future Features</u>
 
@@ -80,18 +159,37 @@ Admin Page
 
 ## <strong>Wireframes</strong>
 ### Home Page
+<img src="markdown/Index.png" width="500">
 
 ### Registration Page
+<img src="markdown/Register.png" width="500">
 
 ### Login Page
+<img src="markdown/SignIn.png" width="500">
 
 ### Logout Page
-
-### Product Detail Page
-
-### Shopping Bag Page
+<img src="markdown/SignOut.png" width="500">
 
 ### Profile Page
+<img src="markdown/Profile.png" width="500">
+
+### Product Detail Page
+<img src="markdown/ProductDetail.png" width="500">
+
+### Shopping Bag Page
+<img src="markdown/Bag.png" width="500">
+
+### Checkout Page
+<img src="markdown/Checkout.png" width="500">
+
+
+# Agile Methodology
+## **GitHub Projects**
+
+Find out project board here:
+* [project board]()
+
+GitHub Projects was used to manage the development of the site. It helped our team to break down large issues into smaller issues and how these fit into the overall goals of implementing specific features we wanted for the site. We also used labels to distinguish the issues which are part of the setup, of the documentation, the must haves and the enhancements, and the required validations.
 
 <br>
 
@@ -112,75 +210,9 @@ Admin Page
 - [Fontawesome](https://fontawesome.com/) - to insert icons in the website to make site more visually appealing and easy to navigate.
 - [Google Fonts](https://fonts.google.com/) - used to import fonts in the style.css stylesheet.
 - [Favicon](https://favicon.io/) - to insert icons in the website to make site more visually appealing.
-- [bootstrap-clean-blog](https://github.com/StartBootstrap/startbootstrap-clean-blog) - A bootstrap blog template imported in for CSS.
+- [Adobe Express](https://https://www.adobe.com/express/) - Used to design the logo.
 
 ## <strong>Testing</strong>
-- [W3C Markup Validation Serice](https://validator.w3.org/) was used to test for error codes in the HTML.
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)  was used to test for error codes in the CSS.
-- [CI Python Linter](https://pep8ci.herokuapp.com/) was used to detect errors and potential problems in Python code.
-- [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
-    was used during the development process to test, debug, explore and modify HTML elements, and to test responsiveness in different screen sizes.
-- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used for improving the quality of web page. It has audits for performance, accessibility, progressive web apps, SEO, and more.
-
-### <u>JShint</u>
-I did not perform any validation on javascript as all the javascript was imported in from [clean blog](https://github.com/StartBootstrap/startbootstrap-clean-blog).
-
-### <u>W3C Markup Validation Serice</u>
-No errors were recieved on the pages except for the post detail page which recieved one error.
-|Error |Error explanation| Code |
-| ------------- | ------------- |------------- |
-|  |  | |
-
-### <u>W3C CSS Validator</u>
-
-
-### <u>Code Institute Python Linter</u>
-
-### <u>Lighthouse</u>
-|Page | Mobile  | Computer|
-| ------------- | ------------- |------------- |
-| | |
-
-
-### <u>Responsiveness</u>
-[Am I Responsive?](http://ami.responsivedesign.is/#) was used to check responsiveness of the site pages across different devices.
- 
- The site has been tested on various sizes such as those listed below.
- 
- <strong>Mobile:</strong>
- 375x667 / 360x740 / 412x915 / 414x896
- 
- <strong>Tablet:</strong>
- 768x1024 / 820x1180 / 912x1368 
- 
-<strong>Monitor:</strong>
- 1280x1024 / 1600x900 / 2560x1440 / 3440x1440
-
-### <u>Manual Testing</u>
-Browser Compatibility:
-
-Browser | Outcome | Pass/Fail 
- --- | --- | ---
-Google Chrome | No appearance, responsiveness nor functionality issues.| 
-Safari | No appearance, responsiveness nor functionality issues. | 
-Microsoft Edge | No appearance, responsiveness nor functionality issues. | 
-Firefox | No appearance, responsiveness nor functionality issues. | 
-
-Device compatibility:
-
-Device | Outcome | Pass/Fail
---- | --- | ---
-Laptop | No appearance, responsiveness nor functionality issues. | 
-ipad mini | No appearance, responsiveness nor functionality issues. | 
-Lenovo M1 Tab | No appearance, responsiveness nor functionality issues. | 
-Samsung s20 | No appearance, responsiveness nor functionality issues. | 
-iphone 12 pro | No appearance, responsiveness nor functionality issues. | 
-
-## <strong>Bugs</strong>
-
-### <u>Unsolved Bugs</u>
-
-### <u>Solved Bugs</u>
 
 ## <strong>Deployment</strong>
  

@@ -1,0 +1,98 @@
+## TABLE OF CONTENTS
+
+* [Automated Testing and Validation](#automated-testing-and-validation)
+    * [HTML Validation](#html-validation)
+    * [CSS Validation](#css-validation)
+    * [JavaScript Validation](#javascript-validation)
+    * [Python Validation](#python-validation)
+    * [Lighthouse Report](#lighthouse-report)
+        * [Desktop](#desktop)
+        * [Mobile](#mobile)
+    * [WAVE Web Accessibility Evaluation Tool](#wave-web-accessibility-evaluation-tool)
+    * [Django Automated Testing](#django-automated-testing)
+        * [Coverage](#coverage)
+* [Manual Testing](#manual-testing)
+    * [Testing User Stories](#testing-user-stories)
+    * [Full Testing](#full-testing)
+* [Bugs, Errors & Solutions](#bugs-found-during-testing-and-development-phase)
+    * [Solved Bugs](#solved-bugs)
+    * [Known Bugs](#known-bugs)
+---
+
+## <strong>Testing</strong>
+- [W3C Markup Validation Serice](https://validator.w3.org/) was used to test for error codes in the HTML.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)  was used to test for error codes in the CSS.
+- [CI Python Linter](https://pep8ci.herokuapp.com/) was used to detect errors and potential problems in Python code.
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+    was used during the development process to test, debug, explore and modify HTML elements, and to test responsiveness in different screen sizes.
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used for improving the quality of web page. It has audits for performance, accessibility, progressive web apps, SEO, and more.
+
+
+## Automated Testing and Validation
+### HTML Validation
+We used [W3C Markup Validation Service](https://validator.w3.org/) to validate all the HTML files by direct input:
+|Page | Mobile |
+| ------------- | ------------- |
+| Index | |
+| Register | |
+| Login | |
+| Logout | |
+| Profile | |
+| Checkout | |
+| Shopping Bag | |
+| Order Confirmation | |
+
+
+
+### CSS Validation
+We used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate all CSS files by direct input.
+
+|Page | Mobile |
+| ------------- | ------------- |
+| Index | |
+| Register | |
+| Login | |
+| Logout | |
+| Profile | |
+| Checkout | |
+| Shopping Bag | |
+| Order Confirmation | |
+
+### JavaScript Validation
+We used [JSHint](https://jshint.com/) to validate all JavaScript and JQuery files
+| Page | Result | Test Details & Screenshots |
+| ---- | :-: | -------------------------- |
+| [add-here-js-file-path] | [add-here-if-error-number] error and [add-here-if-warning-number] warning | [add-here-validation-image] |
+
+### Python Validation
+At the project inception, we installed [PyCodeStyle](https://pycodestyle.pycqa.org/en/latest/intro.html#configuration) in our workspace fixed errors when encountered throughout the development process. We also used [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) to lint our Python code.
+
+
+
+### Lighthouse Report
+[Chrome DevTools' Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to test the performance, accessibility, best practices and SEO of the site
+
+### <u>Lighthouse</u>
+|Page | Mobile  | Computer|
+| ------------- | ------------- |------------- |
+| Index | | |
+| Register | | |
+| Login | | |
+| Logout | | |
+| Profile | | |
+| Checkout | | |
+| Shopping Bag | | |
+| Order Confirmation | | |
+
+In order to fully validate the page, we used the WAVE Chrome extension. This enabled our team to test the pages that require user authentication.
+
+| Page | WAVE This Page Result |
+| ------------- | -------------
+| Index | |
+| Register | |
+| Login | |
+| Logout | |
+| Profile | |
+| Checkout | |
+| Shopping Bag | |
+| Order Confirmation | |
