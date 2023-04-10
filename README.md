@@ -212,7 +212,14 @@ GitHub Projects was used to manage the development of the site. It helped our te
 - [Favicon](https://favicon.io/) - to insert icons in the website to make site more visually appealing.
 - [Adobe Express](https://https://www.adobe.com/express/) - Used to design the logo.
 
-## <strong>Testing</strong>
+# Testing
+Please refer to [TESTING.md](./TESTING.md) file for:
+* Automated Testing and Validation Results
+* Manual Testing and Results
+## Bugs, Issues and Solutions
+Please also refer to [TESTING.md](./TESTING.md) file for:
+* Solutions to bugs found during testing and development phase
+* Known bugs
 
 ## <strong>Deployment</strong>
  
