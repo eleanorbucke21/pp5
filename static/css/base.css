@@ -1,41 +1,17 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap');
 
-
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-    box-sizing: border-box;
+html {
+    height: 100%;
 }
 
 body {
-    background: url('media/TWD.png') no-repeat center center fixed;
+    background: url('/media/TWD.png') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    font:'Roboto';
+    color: #000;
+    font-family: 'Roboto';
 }
-
-.color-black {
-    color: #000000;
-}
-
-.color-dark-gray {
-    color: #535453;
-}
-
-.color-red {
-    color: #F80A0A;
-}
-
-.color-yellow {
-    color: #FFC861;
-}
-
-.color-gray-white {
-    color: #F2F2F2;
-}
-
 
 /* from Bulma */
 .icon {
@@ -82,6 +58,11 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+/* page header */
+.site-heading {
+    background-color: rgba(255, 255, 255, .8);
 }
 
 /* -------------------------------- Media Queries */
