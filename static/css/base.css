@@ -9,6 +9,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background: url('media/TWD.png') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    font:'Roboto';
+}
+
 .color-black {
     color: #000000;
 }
@@ -29,6 +36,7 @@
     color: #F2F2F2;
 }
 
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -40,6 +48,7 @@
 
 .logo-font {
     text-transform: uppercase;
+    font: 'Oswald';
 }
 
 .main-logo-link {
