@@ -77,17 +77,9 @@ body {
 }
 
 /* Logo */
-.logo-font {
-    font: 'Oswald';
-}
-
-.logo1 {
-    text-transform: uppercase;
-}
-
-.logo2 {
-    text-transform: uppercase;
-    letter-spacing: 5px;
+.dclogo {
+    width: 20%;
+    height: 20%;
 }
 
 /* page header */
