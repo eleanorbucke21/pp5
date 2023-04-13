@@ -13,8 +13,6 @@ html {
 }
 
 body {
-    background: url('/media/TWD.png') no-repeat center center fixed;
-    background-size: cover;
     height: calc(100vh - 164px);
     color: #000;
     font-family: 'Roboto';
@@ -30,8 +28,11 @@ body {
 .color-yellow {
     color: #FFC861;
 }
-.color-gray-white {
-    color: #F2F2F2;
+.light-gray {
+    background-color: #D3D3D3;
+}
+.bg-light-gray {
+    background-color: #D3D3D3;
 }
 
 /* from Bulma */
@@ -43,14 +44,11 @@ body {
     width: 1.5rem;
 }
 
-.main-logo-link {
-    width: fit-content;
-}
-
 .shop-now-button {
     background: black;
     color: white;
     min-width: 260px;
+    max-height: 40px;
 }
 
 .btn-black {
@@ -82,14 +80,46 @@ body {
     height: 20%;
 }
 
+.main-logo-link {
+    width: max-content;
+}
+
 /* page header */
+
 .site-heading {
     background-color: rgba(255, 255, 255, .8);
 }
+
 /* Navigation */
+
 .navbar-brand {
     max-width: 20%;
 }
+
+/* index page */
+
+.index-img {
+    background: url('/media/TWD.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.img-btn {
+    min-width: 260px;
+    max-height: 190px;
+}
+
+/* footer */
+
+.footer-design {
+    height: 100px;
+}
+
+.footer-img {
+    max-width: fit-content;
+}
+
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -110,6 +140,7 @@ body {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 130px;
     }
 }
+
