@@ -5,10 +5,10 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}"  class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -17,9 +17,9 @@
                 DIY
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="camping-link">
-                <a href="" class="dropdown-item">DIY</a>
-                <a href="" class="dropdown-item">Gardening</a>
-                <a href="" class="dropdown-item">Off Grid Living</a>
+                <a href="{% url 'products' %}?category=diy" class="dropdown-item">DIY</a>
+                <a href="{% url 'products' %}?category=gardening" class="dropdown-item">Gardening</a>
+                <a href="{% url 'products' %}?category=off_grid_living,off_grid" class="dropdown-item">Off Grid Living</a>
             </div>
         </li>
 
@@ -28,10 +28,10 @@
                 Food
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="meals-link">
-                <a href="" class="dropdown-item">Food</a>
-                <a href="" class="dropdown-item">Kosher MRE's</a>
-                <a href="" class="dropdown-item">Halal MRE's</a>
-                <a href="" class="dropdown-item">Other food items</a>
+                <a href="{% url 'products' %}?category=food,mres,mre" class="dropdown-item">MRE's</a>
+                <a href="{% url 'products' %}?category=kosher" class="dropdown-item">Kosher MRE's</a>
+                <a href="{% url 'products' %}?category=halal" class="dropdown-item">Halal MRE's</a>
+                <a href="{% url 'products' %}?category=food" class="dropdown-item">Other food items</a>
             </div>
         </li>
 
@@ -40,7 +40,7 @@
                 Melee
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="protection-link">
-                <a href="" class="dropdown-item">Melee</a>
+                <a href="{% url 'products' %}?category=weapons,melee,protection" class="dropdown-item">Melee</a>
             </div>
         </li>
 
@@ -49,9 +49,9 @@
                 Camping
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="camping-link">
-                <a href="" class="dropdown-item">Camping Equipment</a>
-                <a href="" class="dropdown-item">Tents</a>
-                <a href="" class="dropdown-item">Sleeping Bag</a>
+                <a href="{% url 'products' %}?category=camping,equipment" class="dropdown-item">Camping Equipment</a>
+                <a href="{% url 'products' %}?category=tent,shelter" class="dropdown-item">Tents</a>
+                <a href="{% url 'products' %}?category=sleeping_bag" class="dropdown-item">Sleeping Bag</a>
             </div>
         </li>
 
