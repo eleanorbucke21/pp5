@@ -48,10 +48,17 @@
 </head>
 
 <body>
-
+<!-- Header -->
     {% include 'includes/header.html' %}
 
-    <!-- Toasts -->
+<!-- Delivery Banner -->
+    <div id="delivery-banner" class="row text-center">
+        <div class="col bg-black text-white">
+            <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
+        </div>
+    </div>
+
+<!-- Toasts -->
     {% if messages %}
     <div class="message-container"></div>
     {% endif %}
@@ -66,7 +73,7 @@
     {% endblock %}
 
     {% include 'includes/footer.html' %}
-    
+
 </body>
 
 </html>
