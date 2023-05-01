@@ -161,6 +161,26 @@ a.category-badge > span.badge:hover {
     color: white !important;
 }
 
+/* AllAuth Pages */
+
+.containform {
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+.signupheader {
+    text-decoration: underline;
+}
+
+.allauthimg {
+    max-height: 95%;
+}
+
+.allauthform {
+    font-weight: 400;
+}
+
+
 /* Toasts */
 .message-container {
     position: absolute; top: 0; right: 0;
