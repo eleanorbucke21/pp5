@@ -1,0 +1,130 @@
+# Query: $
+# ContextLines: 1
+
+44 results - 10 files
+
+bag/templates/bag/bag.html:
+   48                                      <td class="py-3">
+   49:                                         <p class="my-0">€{{ item.product.price }}</p>
+   50                                      </td>
+
+   81                                      <td class="py-3">
+   82:                                         <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
+   83                                      </td>
+
+   89                                      <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
+   90:                                     <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
+   91                                      {% if free_delivery_delta > 0 %}
+   92                                          <p class="mb-1 text-danger">
+   93:                                             You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
+   94                                          </p>
+
+  135      // Update quantity on click
+  136:     $('.update-link').click(function(e) {
+  137:         var form = $(this).prev('.update-form');
+  138          form.submit();
+
+  141      // Remove item and reload on click
+  142:     $('.remove-item').click(function(e) {
+  143          var csrfToken = "{{ csrf_token }}";
+  144:         var itemId = $(this).attr('id').split('remove_')[1];
+  145:         var url = `/bag/remove/${itemId}/`;
+  146          var data = {'csrfmiddlewaretoken': csrfToken};
+  147  
+  148:         $.post(url, data)
+  149           .done(function() {
+
+dayscoming/settings.py:
+  23  # SECURITY WARNING: keep the secret key used in production secret!
+  24: SECRET_KEY = 'django-insecure-3)2u^uvbaam4tmyyrg*w1=boqhq21_9127ux($+wp&!abc&j7#'
+  25  
+
+products/fixtures/products.json:
+  220              "rating": 4.4,
+  221:             "image_url": "https://contents.mediadecathlon.com/p2376634/k$2dbb8e5eb2ff102f949a351d3bb11664/mh100-camping-tent-2-man.jpg?&f=800x800",
+  222              "image": "tent3.jpg"
+
+products/templates/products/product_detail.html:
+  31                      <p class="mb-0">{{ product.name }}</p>
+  32:                     <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+  33                      {% if product.category %}
+
+products/templates/products/products.html:
+   71                                          <div class="col">
+   72:                                             <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+   73                                              {% if product.category %}
+
+  124      <script type="text/javascript">
+  125: 		$('.btt-link').click(function(e) {
+  126  			window.scrollTo(0,0)
+
+  130      <script type="text/javascript">
+  131:         $('#sort-selector').change(function() {
+  132:             var selector = $(this);
+  133              var currentUrl = new URL(window.location);
+
+products/templates/products/includes/quantity_input_script.html:
+   4      function handleEnableDisable(itemId) {
+   5:         var currentValue = parseInt(€(`#id_qty_€{itemId}`).val());
+   6          var minusDisabled = currentValue < 2;
+   7          var plusDisabled = currentValue > 98;
+   8:         $(`#decrement-qty_€{itemId}`).prop('disabled', minusDisabled);
+   9:         $(`#increment-qty_€{itemId}`).prop('disabled', plusDisabled);
+  10      }
+
+  12      // Ensure proper enabling/disabling of all inputs on page load
+  13:     var allQtyInputs = $('.qty_input');
+  14      for(var i = 0; i < allQtyInputs.length; i++){
+  15:         var itemId = $(allQtyInputs[i]).data('item_id');
+  16          handleEnableDisable(itemId);
+
+  19      // Check enable/disable every time the input is changed
+  20:     $('.qty_input').change(function() {
+  21:         var itemId = $(this).data('item_id');
+  22          handleEnableDisable(itemId);
+
+  25      // Increment quantity
+  26:     $('.increment-qty').click(function(e) {
+  27         e.preventDefault();
+  28:        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+  29:        var currentValue = parseInt($(closestInput).val());
+  30:        $(closestInput).val(currentValue + 1);
+  31:        var itemId = $(this).data('item_id');
+  32         handleEnableDisable(itemId);
+
+  35      // Decrement quantity
+  36:     $('.decrement-qty').click(function(e) {
+  37         e.preventDefault();
+  38:        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+  39:        var currentValue = parseInt($(closestInput).val());
+  40:        $(closestInput).val(currentValue - 1);
+  41:        var itemId = $(this).data('item_id');
+  42         handleEnableDisable(itemId);
+
+templates/base.html:
+  94      <script type="text/javascript">
+  95:         $('.toast').toast('show');
+  96      </script>
+
+templates/includes/header.html:
+  57                                  {% if grand_total %}
+  58:                                     €{{ grand_total|floatformat:2 }}
+  59                                  {% else %}
+  60:                                     €0.00
+  61                                  {% endif %}
+
+templates/includes/mobile_top_header.html:
+  53                  {% if grand_total %}
+  54:                     €{{ grand_total|floatformat:2 }}
+  55                  {% else %}
+  56:                     €0.00
+  57                  {% endif %}
+
+templates/includes/toasts/toast_success.html:
+  35                          Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}: 
+  36:                         <span class="float-right">€{{ total|floatformat:2 }}</span>
+  37                      </p></strong>
+
+  39                          <p class="mb-0 p-2 bg-light-gray shadow-sm text-black text-center">
+  40:                             Spend <strong>€{{ free_delivery_delta }}</strong> more to get free next day delivery!
+  41                          </p>
