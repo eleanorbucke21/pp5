@@ -16,6 +16,7 @@ body {
     height: calc(100vh - 164px);
     color: #000;
     font-family: 'Roboto';
+    overflow-y: scroll;
 }
 
 /* colors */
@@ -49,6 +50,7 @@ body {
     color: white;
     min-width: 260px;
     max-height: 40px;
+    position: fixed;
 }
 
 .btn-black {
@@ -88,6 +90,7 @@ body {
 
 .site-heading {
     background-color: rgba(255, 255, 255, .8);
+    position: fixed;
 }
 
 /* Navigation */
@@ -96,6 +99,13 @@ body {
     max-width: 20%;
 }
 
+.delivery-font{
+    font-family: 'Oswald';
+}
+
+.delivery-bg {
+    background-color: #000;
+}
 /* index page */
 
 .index-img {
@@ -103,15 +113,13 @@ body {
     background-size: cover;
 }
 
-.img-btn {
-    min-width: 260px;
-    max-height: 190px;
-}
 
 /* footer */
 
 .footer-design {
     height: 100px;
+    margin-top: auto;
+    position: absolute;
 }
 
 .footer-img {
