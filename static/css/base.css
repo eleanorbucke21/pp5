@@ -86,6 +86,10 @@ body {
     width: max-content;
 }
 
+.logo-font {
+    font-family: 'Oswald';
+}
+
 /* page header */
 
 .site-heading {
@@ -252,6 +256,18 @@ a.category-badge > span.badge:hover {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+/* Checkout Page */
+
+.bg-grocery {
+    background: url('/media/LOUgrocery.png') no-repeat center center fixed;
+    background-size: cover;
+    padding-bottom: 1%;
+}
+
+.checkout-container {
+    background: rgba(211,211,211,0.8);
 }
 
 /* -------------------------------- Media Queries */

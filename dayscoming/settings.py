@@ -45,6 +45,10 @@ INSTALLED_APPS = [
     'home',
     'products',
     'bag',
+    'checkout',
+
+    # Other
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -54,10 +58,13 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.template.context_processors.media',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'dayscoming.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
@@ -75,9 +82,10 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'bag.contexts.bag_contents',
             ],
-            'libraries': {
-                'bag_tools': 'bag.templatetags.bag_tools',
-            }
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
