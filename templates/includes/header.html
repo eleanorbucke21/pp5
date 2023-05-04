@@ -1,4 +1,4 @@
-<header class="container-fluid fixed-top bg-light-gray">
+<header class="container-fluid bg-light-gray">
     
     <!--Logo Button-->
     <nav id="topnav" class="row pt-lg-2 d-none d-lg-flex">
@@ -26,14 +26,23 @@
 
         <!-- Account -->
         <nav class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+            <ul class="list-inline list-unstyled text-center text-lg-right my-0 text-black font-weight-bold">
                 <li class="list-inline-item dropdown">
                     <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="text-center">
-                            <div><i class="fas fa-user fa-lg"></i></div>
+                            <div>
+                                {% if request.user.is_authenticated %}
+                                <span class="col "><i class="fa-solid fa-user" style="color: #000000;"></i></span>
+                                {% else %}
+                                <span class="col">
+                                    <i class="fa-solid fa-skull-crossbones" style="color: #000000;"></i>
+                                {% endif %}
+                                </span>
+                            </div>
                             <p class="my-0">My Account</p>
                         </div>
                     </a>
+                    
                     <div class="dropdown-menu border-0" aria-labelledby="user-options">
                         {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
@@ -50,10 +59,10 @@
 
                 <!-- Shopping Bag -->
                 <li class="list-inline-item">
-                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                    <a class="{% if grand_total %}text-black font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                         <div class="text-center">
                             <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                            <p class="my-0">
+                            <p class="my-0 ">
                                 {% if grand_total %}
                                     €{{ grand_total|floatformat:2 }}
                                 {% else %}
