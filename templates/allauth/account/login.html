@@ -7,8 +7,6 @@
 
 {% block content %}
 
-<h1>{% trans "Sign In" %}</h1>
-
 {% get_providers as socialaccount_providers %}
 
 {% if socialaccount_providers %}
@@ -31,6 +29,8 @@
 {% else %}
 
 {% endif %}
+
+<br>
 
 <div class="row h-100 bg-light-gray containform pb-3">
   <div class="col-lg-4 col-xs-12 pt-3 pl-3">
@@ -55,10 +55,6 @@
   </div>
 </div>
 
-<div class="container header-container">
-  <div class="row">
-    <div class="col"></div>
-  </div>
-</div>
+<br>
 
 {% endblock %}
