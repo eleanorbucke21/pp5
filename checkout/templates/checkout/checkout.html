@@ -52,7 +52,7 @@
                     </div>
                     <div class="col-3 text-right">
                         <p class="my-0 small text-black font-weight-bold">
-                            ${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            €{{ item.product.price | calc_subtotal:item.quantity }}</p>
                     </div>
                 </div>
                 {% endfor %}
@@ -64,9 +64,9 @@
                         <p class="my-0">Grand Total:</p>
                     </div>
                     <div class="col-3">
-                        <p class="my-0">${{ total | floatformat:2 }}</p>
-                        <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                        <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                        <p class="my-0">€{{ total | floatformat:2 }}</p>
+                        <p class="my-0">€{{ delivery | floatformat:2 }}</p>
+                        <p class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
                     </div>
                 </div>
             </div>
@@ -112,6 +112,9 @@
 
                         <!-- Used to display form errors -->
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+
+                        <!-- Pass the client secret to the view so we can get the payment intent id -->
+                        <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
 
                     <div class="submit-button text-right mt-5 mb-2">
@@ -131,7 +134,7 @@
                             <span class="icon">
                                 <i class="fas fa-exclamation-circle"></i>
                             </span>
-                            <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+                            <span>Your card will be charged <strong>€{{ grand_total|floatformat:2 }}</strong></span>
                         </p>
                     </div>
                 </form>
@@ -143,7 +146,7 @@
     <div id="loading-overlay">
         <h1 class="text-light logo-font loading-spinner">
             <span class="tenor-gif-embed" data-postid="16609356" data-share-method="host" data-aspect-ratio="1.79775"
-                data-width="100%">
+                data-width="50%">
             </span>
         </h1>
     </div>
