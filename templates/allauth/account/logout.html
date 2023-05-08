@@ -4,30 +4,21 @@
 
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
-{% block content %}
-<br>
+{% block inner_content %}
+<hr>
+<h2 class="logo-font mb-4 text-center"><u>{% trans "Sign Out" %}</u></h2>
+<hr>
+<p>{% trans 'Are you sure you want to sign out?' %}</p>
 
-<div class="row h-100 bg-light-gray containform pt-3">
-  <div class="col-lg-4 col-xs-12">
-    <!-- Sign Out Form -->
-    <h1 class="font-weight-bold signupheader text-center">{% trans "Sign Out" %}</h1>
-
-    <p class="text-center">{% trans 'Are you sure you want to sign out?' %}</p>
-
-    <form class="text-center allauthform" method="post" action="{% url 'account_logout' %}">
-      {% csrf_token %}
-      {% if redirect_field_value %}
-      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-      {% endif %}
-      <button type="submit" class="btn btn-secondary text-white font-weight-bold">{% trans 'Sign Out' %}</button>
-    </form>
-  </div>
-  <div class="col-lg-8 col-xs-12">
-    <img src='/media/city-overgrown-apoc.jpg' class="img-thumbnail allauthimg justify-content-start" alt="spice market">
-  </div>
+<div class="text-center">
+<form method="post" action="{% url 'account_logout' %}">
+  {% csrf_token %}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+  {% endif %}
+  <a class="btn btn-secondary text-white font-weight-bold" href="{% url 'home' %}">Cancel</a>
+  <button type="submit" class="btn btn-secondary text-white font-weight-bold rounded">{% trans 'Sign Out' %}</button>
+</form>
 </div>
-
-<br>
-
 
 {% endblock %}

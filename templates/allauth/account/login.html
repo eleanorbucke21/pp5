@@ -5,7 +5,11 @@
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
-{% block content %}
+{% block inner_content %}
+
+<hr>
+<h2 class="logo-font mb-4 signupheader">{% trans "Sign In" %}</h2>
+<hr>
 
 {% get_providers as socialaccount_providers %}
 
@@ -29,32 +33,22 @@
 {% else %}
 
 {% endif %}
-
-<br>
-
-<div class="row h-100 bg-light-gray containform pb-3">
-  <div class="col-lg-4 col-xs-12 pt-3 pl-3">
-     <!-- Login Form -->
-    <h1 class="font-weight-bold signupheader text-center">Sign In</h1>
-
-    <form class="login text-center allauthform" method="POST" action="{% url 'account_login' %}">
-      {% csrf_token %}
-      {{ form.as_p }}
-      {% if redirect_field_value %}
-      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-      {% endif %}
+<div class="d-flex justify-content-center">
+  <form class="login" method="POST" action="{% url 'account_login' %}">
+    {% csrf_token %}
+    {{ form|crispy }}
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+    <a class="primaryAction btn btn-secondary text-white font-weight-bold rounded" href="{% url 'home' %}">Home</a>
+    <button class="primaryAction btn btn-secondary text-white font-weight-bold rounded" type="submit">{% trans "Sign In" %}</button>
+    
+    <!-- Reset Password-->
+    <p class="mt-2">
       <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-      <button class="primaryAction btn btn-secondary text-white font-weight-bold" type="submit">{% trans "Sign In" %}</button>
-    </form>
-    <br>
-    <p class="text-center text-wrap">{% blocktrans %}If you have not created an account yet, then please
-      <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-  </div>
-  <div class="col-lg-8 col-xs-12 pt-3 pl-3">
-    <img src='/media/city-overgrown-apoc.jpg' class="img-thumbnail allauthimg justify-content-start" alt="spice market">
-  </div>
+    </p>
+  </form>
 </div>
-
-<br>
-
+<p class="text-center">{% blocktrans %}If you have not created an account yet, then please
+  <a class="font-weight-bold" href="{{ signup_url }}"><u>sign up</u></a> first.{% endblocktrans %}</p>
 {% endblock %}

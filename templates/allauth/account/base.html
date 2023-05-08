@@ -1,1 +1,20 @@
 {% extends "base.html" %}
+
+{% block content %}
+
+<br>
+<div class="overlay"></div>
+<div class="row h-100 bg-light-gray pb-3">
+    <div class="col-lg-5 col-xs-12 pt-3 pl-3">
+        <div class="allauth-form-inner-content">
+            {% block inner_content %}
+            {% endblock %}
+        </div>
+    </div>
+    <div class="col-lg-7 col-xs-12 pt-3 pl-3">
+        <img src='/media/city-overgrown-apoc.jpg' class="img-thumbnail allauthimg justify-content-start"
+            alt="spice market">
+    </div>
+</div>
+<br>
+{% endblock %}
