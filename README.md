@@ -1,3 +1,10 @@
+
+<img src="markdown/amiresponsive.png" width="100%">
+
+:desktop_computer: [Live Website] (https://pp4.herokuapp.com/)
+
+:open_file_folder: [Github Repository] (https://github.com/eleanorbucke21/PP4)
+
 **TABLE OF CONTENTS**
 * [USER EXPERIENCE](#user-experience)
 * [User Stories](#user-stories)
@@ -34,15 +41,6 @@
     * [Media](#umediau)
     * [Images Used:](#umediau)
 ---
-
-
-<img src="markdown/amiresponsive.png" width="100%">
-
-
-
-:desktop_computer: [Live Website] (https://pp4.herokuapp.com/)
-
-:open_file_folder: [Github Repository] (https://github.com/eleanorbucke21/PP4)
 
 # User Experience
 
