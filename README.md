@@ -1,6 +1,3 @@
-:desktop_computer: [Live Website] () 
-:open_file_folder: [Github Repository] ()
-
 **TABLE OF CONTENTS**
 * [USER EXPERIENCE](#user-experience)
 * [User Stories](#user-stories)
