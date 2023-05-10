@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <img src="markdown/amiresponsive.png" width="100%">
 
 Days coming is a fictitious ecommerce full stack project built using Django, Python, JavaScript and Bootstrap 4. The site is deployed to Heroku, uses Amazon S3 for cloud storage and Stripe for payment processing. 
@@ -11,14 +10,6 @@ Days coming is my 5th milestone project for Code Institute in Diploma in Softwar
 :desktop_computer: [Live Website](https://pp5-dayscoming.herokuapp.com/)
 
 :open_file_folder: [Github Repository](https://github.com/eleanorbucke21/PP4)
-=======
-
-<img src="markdown/amiresponsive.png" width="100%">
-
-:desktop_computer: [Live Website] (https://pp4.herokuapp.com/)
-
-:open_file_folder: [Github Repository] (https://github.com/eleanorbucke21/PP4)
->>>>>>> b2f4e5e1d79eea7d1d4a39f98dcebc47a758672f
 
 **TABLE OF CONTENTS**
 * [USER EXPERIENCE](#user-experience)
@@ -57,11 +48,8 @@ Days coming is my 5th milestone project for Code Institute in Diploma in Softwar
     * [Images Used:](#umediau)
 ---
 
-<<<<<<< HEAD
 <br>
 
-=======
->>>>>>> b2f4e5e1d79eea7d1d4a39f98dcebc47a758672f
 # User Experience
 
 ### Agile
