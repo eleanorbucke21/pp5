@@ -1,5 +1,15 @@
-:desktop_computer: [Live Website] () 
-:open_file_folder: [Github Repository] ()
+<img src="markdown/amiresponsive.png" width="100%">
+
+Days coming is a fictitious ecommerce full stack project built using Django, Python, JavaScript and Bootstrap 4. The site is deployed to Heroku, uses Amazon S3 for cloud storage and Stripe for payment processing. 
+
+Days Coming is a business to consumer online retailer for apocalyptic preperation also known as [survivalism](https://en.wikipedia.org/wiki/Survivalism). The products on the site reflect the theme of survivalism such as [MRE'S](https://en.wikipedia.org/wiki/Meal,_Ready-to-Eat), and [living off the grid](https://en.wikipedia.org/wiki/Off-the-grid). 
+
+Days coming is my 5th milestone project for Code Institute in Diploma in Software Development (E-commerce Applications).
+
+
+:desktop_computer: [Live Website](https://pp5-dayscoming.herokuapp.com/)
+
+:open_file_folder: [Github Repository](https://github.com/eleanorbucke21/PP4)
 
 **TABLE OF CONTENTS**
 * [USER EXPERIENCE](#user-experience)
@@ -38,14 +48,7 @@
     * [Images Used:](#umediau)
 ---
 
-
-<img src="markdown/amiresponsive.png" width="100%">
-
-
-
-:desktop_computer: [Live Website] (https://pp4.herokuapp.com/)
-
-:open_file_folder: [Github Repository] (https://github.com/eleanorbucke21/PP4)
+<br>
 
 # User Experience
 
@@ -58,30 +61,37 @@ I implemented agile methodology when creating this website. The link to the proj
 HomePage <strong><u>(Not logged in)</u></strong>
 
 - As a user I want to be able to tell what the website is about.
-- As a user I want to see the products.
-- As a user I want to be able to buy products.
 - As a user I want to be able to register.
 - As a user I want to be able to login. 
+- As a user I want to see the products.
+- As a user I want to be able to buy products.
+- As a user I want to receive a confirmation notification after I have bought something.
+- As a user I want to receive an email confirmation after I have bought something.
 
 Homepage <strong><u>(Logged in) </u></strong>
 - As a user I want to be able to buy products.
 - As a user I want to be able to logout.
 
+Header/Navbar<strong><u>(Not logged in)</u></strong>
+- I want to be able to see the website name.
+- I want to be able to search in the search bar. 
+
 Register
 
 - As a user I want to be able to register.
-- I want to recieve a notification that I have registered.
+- I want to recieve a confirmation notification that I have registered.
+- I want to recieve a confirmation email that I have registered.
 
 Login Page
 
 - As a user I want to be able to login with username and password.
-- As a user I want to have the option of remembering me indtead of having to login.
+- As a user I want to have the option of remembering me instead of having to login again on my browser.
 - I want to recieve a notification that I have logged in.
 
 Logout Page
 
 - As a user I want to be able to logout.
-- I want to recieve a notification that I have logged out.
+- I want to recieve a confirmation notification that I have logged out.
 
 Profile Page
 
@@ -89,12 +99,30 @@ Profile Page
 - I want to be able to update my details. 
 - I want to be able to see past orders.
 
+All Products Page
+
+- I want to be able to see the products.
+- I want to be able to filter the products by price, rating &amp; category.  
+
+All Products Page(Logged in as SuperUser/Admin)
+
+- I want to be able to see the products.
+- I want to be able to filter the products by price, rating &amp; category.  
+- I want to be able to add it to my shopping bag.
+
 Product Detail Page
 
 - I want to be able to see the product.
 - I want to see the details of the product.
 - I want to be able to choose the sizes. 
 - I want to be able to add it to my shopping bag.
+
+Product Detail Page(Logged in as SuperUser/Admin)
+
+- I want to be able to see the product.
+- I want to be able to edit the product.
+- I want to be able to delete the product.
+- I want to see the details of the product. 
 
 Shopping Bag Page
 
@@ -156,13 +184,19 @@ Admin Page
 - The post has two buttons underneath displaying the likes and dislikes. <br>
 
 
-## <u>Future Features</u>
-
 # Typography and Color Scheme
 
 ## <u>Font</u>
+The fonts used in this project were:
+- [Roberto](https://fonts.google.com/specimen/Roboto). This was used in the body of the project.
+- [Oswald](https://fonts.google.com/specimen/Oswald). This was used on headers through out the project. 
 
 ## <u>Color Scheme</u>
+
+The colout scheme used was:
+- Dark gray #535453
+- Light gray #D3D3D3
+- Red #F80A0A
 
 ## <strong>Wireframes</strong>
 ### Home Page
@@ -218,70 +252,30 @@ GitHub Projects was used to manage the development of the site. It helped our te
 - [Google Fonts](https://fonts.google.com/) - used to import fonts in the style.css stylesheet.
 - [Favicon](https://favicon.io/) - to insert icons in the website to make site more visually appealing.
 - [Adobe Express](https://https://www.adobe.com/express/) - Used to design the logo.
+- [Abdobe Photoshop](https://www.adobe.com/ie/products/photoshop.html) - Used to style the images used.
+---
 
-# Testing
+# **TESTING**
 Please refer to [TESTING.md](./TESTING.md) file for:
 * Automated Testing and Validation Results
 * Manual Testing and Results
-## Bugs, Issues and Solutions
+
+<br/>
+
+---
+# **BUGS, ISSUES AND SOLUTIONS**
 Please also refer to [TESTING.md](./TESTING.md) file for:
 * Solutions to bugs found during testing and development phase
 * Known bugs
+<br/>
 
-## <strong>Deployment</strong>
- 
- ### <u>Github</u>
-
-This website was published using GitHub Pages.
-
-- Navigate to [GitHub](https://github.com/) and log in.
-
-- Navigate to your repositories and find the project you want to deploy
-
-- Under the name of your chosen Repository you will see a ribbon of selections, click on 'Settings' located on the right hand side.
-
-- Scroll down till you see 'Pages' heading on the left hand side
-
-- Under the 'Source' click on the dropdown and select 'master' or 'main' branch and click save
-
-- The page will reload and you'll see the link of your published page displayed under 'GitHub' pages.
-
-- It takes a few minutes for the site to be published, wait until the background of your link changes to a green color before trying to open it.
-
-- Congratulations you have deployed your project!
- 
- This website was written on Gitpod.
- 
- ### <u>Gitpod</u>
- - Navigate to [Gitpod] through [GitHub](https://github.com/), [GitLab](https://www.gitlab.com/).
-- In the browser’s address bar, prefix the entire URL with gitpod.io/# and press Enter.
-- For example, gitpod.io/#https://github.com/gitpod-io/website
-- We recommend you install the Gitpod browser extension to make this a one-click operation.
-- Sign in with one of the listed providers and let the workspace start up.
-- Congratulations, you have started your first of many ephemeral developer environments!
-
-### <u>ElephantSQL</u>
-This website was hosted on elephantSQL.
-- Create a new app.
-- Add a name of the app. This name should be a name that helps you identify which application the instance is used by.
-- Select a plan: The plan you would like to have. I used <strong>Tiny Turtle Plan</strong>
-- Select tags: I left this field blank.
-- Select Region: I selected EU-West-1 (IRELAND).
-- Then click review.
-- Check that the details are correct tthen click <strong>"Create Instance"</strong>.
-- Return to the ElephantSQL dashboard and click on the database instance name for this project.
-- In the URL section, click the copy icon to copy the database URL which will then be put into the envy.py file in gitpod.
-
-### <u>Heroku</u>
-This website was deployed on Heroku. 
-* When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-    1. `heroku/python`
-    2. `heroku/nodejs`
-
-* You must then create a _Config Var_ called `PORT`. Set this to `8000`
-* If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-* Connect your GitHub repository and deploy as normal.
+---
+# **DEPLOYMENT**
+Please refer to [DEPLOYMENT.md](./DEPLOYMENT.md) file for:
+* Creating the database to be used in production
+* Deploying to Heroku
+* Setting up AmazonS3 for hosting our static and media files
+---
 
 ## <strong>Credits</strong>
 ### <u>Content</u>
@@ -291,3 +285,68 @@ This website was deployed on Heroku.
 ### <u>Media</u>
 
 <strong><u>Images Used:</u></strong>
+- [12-Halal.jpg](https://de.homeloft.eu/products/xmre-halal-1000-meals-ready-to-eat-mre-military-grade-ration-extended-shelf-life-no-refrigeration-for-law-enforcement-emergency-food-supply-outdoor-enthusiasts-12-meals-6-menus-usa-made).
+
+- [12-Kosher-Mre's-with-heaters.jpg](https://www.amazon.com/XMRE-Kosher-Meals-Ready-Refrigeration/dp/B087D6Q5G6)
+
+- [12-MRE's-with-heaters.jpg]()
+
+- DaysComing.png created in [Adobe Express](https://https://www.adobe.com/express/).
+
+- [LOUgrocery.png](https://www.artstation.com/artwork/mDDV8Y) Edited in Adobe Photoshop. 
+
+- [TWD.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wallpaperflare.com%2Fcar-city-destruction-road-the-walking-dead-wallpaper-bntiu&psig=AOvVaw1V13uFa9s2Sk_iFQ-gHhVL&ust=1681290834624000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMC7jcq-of4CFQAAAAAdAAAAABAE) Edited in Adobe Photoshop. 
+
+- [book1.jpg](https://www.amazon.co.uk/Preppers-Long-Term-Survival-Guide-Grid/dp/1612432735/ref=asc_df_1612432735/?tag=googshopuk-21&linkCode=df0&hvadid=310834580283&hvpos=&hvnetw=g&hvrand=3955009589656556194&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007880&hvtargid=pla-432398661566&psc=1&th=1&psc=1)
+
+- [book2.jpg](https://www.amazon.co.uk/New-Complete-Book-Self-Sufficiency-Realists/dp/0241352460/ref=asc_df_0241352460/?tag=googshopuk-21&linkCode=df0&hvadid=310817437803&hvpos=&hvnetw=g&hvrand=3955009589656556194&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007880&hvtargid=pla-555275467120&psc=1)
+
+- [book3.jpg](https://www.lowplexbooks.com/products/bear-grylls-survival-skills-handbook-collection-series-10-books-collection-set?variant=31205394219098&currency=EUR&utm_source=google&utm_medium=cpc&utm_campaign=google+shopping)
+
+- [book4.jpg](https://www.amazon.co.uk/Step-Step-Projects-Self-Sufficiency-Edibles/dp/159186688X/ref=asc_df_159186688X/?tag=googshopuk-21&linkCode=df0&hvadid=310977283160&hvpos=&hvnetw=g&hvrand=9012099597391996282&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007880&hvtargid=pla-491799985424&psc=1&th=1&psc=1 )
+
+- [book5.jpg](https://www.amazon.co.uk/Irelands-Hidden-Medicine-exploration-indigenous/dp/1913504972/ref=asc_df_1913504972/?tag=googshopuk-21&linkCode=df0&hvadid=535918752477&hvpos=&hvnetw=g&hvrand=1150682498680992184&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007880&hvtargid=pla-1422958457022&psc=1&th=1&psc=1)
+
+- [book6.jpg](https://www.amazon.co.uk/Handmade-Apothecary-Healing-herbal-recipes/dp/0857833731/ref=asc_df_0857833731/?tag=googshopuk-21&linkCode=df0&hvadid=310805565966&hvpos=&hvnetw=g&hvrand=1150682498680992184&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007880&hvtargid=pla-418652487118&psc=1&th=1&psc=1)
+
+- [british.jpg](https://www.ebay.co.uk/itm/303999142316?mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5338956840&toolid=10049&customid=777_777_777)
+
+- [chickenwire.jpg](https://www.amazon.co.uk/MARKSMAN-Galvanised-HEXAGONAL-Quality-Chicken/dp/B09FZFKSSC/ref=asc_df_B09FZFKSSC/?tag=googshopuk-21&linkCode=df0&hvadid=606415632891&hvpos=&hvnetw=g&hvrand=4984429145861041103&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007880&hvtargid=pla-1729484606159&psc=1)
+
+- [cricketbat.jpg](https://edsports.ie/shop/cricket-shop/cricket-bats/kookaburra-beast-9-1-cricket-bat/)
+
+- [crossbow.jpg](https://www.ebay.co.uk/itm/255921005855?mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5338956842&toolid=10049&customid=777_777_777)
+
+- [firstaid.jpg](https://www.firstaidshop.ie/Elite-Waist-Bag-p/elitewaistbag.htm)
+
+- [garden1.jpg](https://www.amazon.co.uk/Grand-Vegetable-Seed-Growing-Biodegradable/dp/B07YSNBNQS/ref=asc_df_B07YSNBNQS/?tag=googshopuk-21&linkCode=df0&hvadid=399666076754&hvpos=&hvnetw=g&hvrand=13773112990152098504&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007880&hvtargid=pla-842704726239&psc=1&tag=&ref=&adgrpid=84809710723&hvpone=&hvptwo=&hvadid=399666076754&hvpos=&hvnetw=g&hvrand=13773112990152098504&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007880&hvtargid=pla-842704726239)
+
+- [garden2.jpg](https://www.amazon.co.uk/Kitchen-Herb-Seed-Set-Varieties/dp/B082YBWQ2Z/ref=asc_df_B082YBWQ2Z/?tag=googshopuk-21&linkCode=df0&hvadid=399666076754&hvpos=&hvnetw=g&hvrand=13773112990152098504&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007880&hvtargid=pla-859115129016&psc=1&tag=&ref=&adgrpid=84809710723&hvpone=&hvptwo=&hvadid=399666076754&hvpos=&hvnetw=g&hvrand=13773112990152098504&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007880&hvtargid=pla-859115129016)
+
+- [halal22.png](https://www.mre-empire.com/products/usa-halal-mre-military-meal-ready-to-eat-ration)
+
+- [halalchick.png](https://www.ebay.com/itm/203285573917)
+
+- [headgear1.jpg](https://www.amazon.co.uk/Oregon-Q515061-Combination-Trimmer-Brushcutting/dp/B007KJMNCM/ref=asc_df_B007KJMNCM/?tag=googshopuk-21&linkCode=df0&hvadid=217947492190&hvpos=&hvnetw=g&hvrand=13709334112229584797&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007880&hvtargid=pla-422177074713&th=1)
+
+- [hurley.jpg](https://www.elverys.ie/Elverys/GAA/Hurling/Hurleys/Reydon-Uwin-Hurley-34in-Multi/p/000000000001124554?gclid=CjwKCAjw8-OhBhB5EiwADyoY1czyFnSIzkGbJ7R1t5GQb0zJ3b9z4iqsTCXIGPBCWogqYF0yOIdtlBoCtiUQAvD_BwE)
+
+- [kosherweek.jpg](https://www.ebay.co.uk/itm/144085547640?mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5338956840&toolid=10049&customid=777_777_777)
+
+- [lucielle.jpg](https://www.google.com/search?q=lucille+baseball+bat&sxsrf=APwXEdeFa_GiQxYy_66JfHFJtAv7Vyun6A:1680975459054&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjQsPPI6Zr-AhXWQEEAHYPuCnsQ_AUoAXoECAEQAw&biw=1478&bih=691&dpr=1.3#spd=18027295557628744709)
+
+- [metalbaseball.jpg](https://www.amazon.co.uk/Unibos-Aluminium-Baseball-Anti-Slip-Lightweight/dp/B0BC8QWHG5/ref=asc_df_B0BC8QWHG5/?tag=googshopuk-21&linkCode=df0&hvadid=622397534057&hvpos=&hvnetw=g&hvrand=9291461595005078971&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007880&hvtargid=pla-1765888545499&th=1)
+
+- [sleepingbag1.jpg](https://www.amazon.co.uk/SOULOUT-Sleeping-Weather-Lightweight-Waterproof/dp/B07HBZCSR8/ref=asc_df_B07HBZCSR8/?tag=googshopuk-21&linkCode=df0&hvadid=309952946065&hvpos=&hvnetw=g&hvrand=15399038520547434821&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007880&hvtargid=pla-595785524795&th=1)
+
+- [sleepingbag2.jpg](https://www.ebay.co.uk/itm/144841253716?mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5338956843&toolid=10049&customid=777_777_777)
+
+- [sleepingbag3.jpg](https://www.amazon.co.uk/Andes-Nevado-Season-Camping-Sleeping/dp/B00D7CNLAY?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A20UFIL7MHKG1J&th=1)
+
+- [tent1.png](https://www.greatoutdoors.ie/products/the-north-face-stormbreak-2-backpacking-tent)
+
+- [tent2.png](https://www.halfords.ie/motoring/camping-and-leisure/tents/halfords-premium-6-person-vis-a-vis-tent-506150.html)
+
+- [tent3.jpg](https://www.decathlon.ie/2-3-man-tents/303295-61580-mh100-camping-tent-2-man.html?srsltid=AfAwrE7B4Ag8thGKKNpj1Wgw3unAoRwJo-j8CRlV2ujjLGMErOPelMXT66I#/demodelsize-254no_size/demodelcolor-8513471)
+
+- [usration.png](https://www.ninelife.ie/products/genuine-military-mre-meal-with-inspection-date-september-2017-or-newer-bbq-shredded-beef?gclid=CjwKCAjw8-OhBhB5EiwADyoY1Wu3ol7xW21VswTP5w1tNnOvY2qTr7PVmVXmlh4EGPbOm-WdbD99OhoC6EUQAvD_BwE)
