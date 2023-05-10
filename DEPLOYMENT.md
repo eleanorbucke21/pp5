@@ -249,6 +249,6 @@ ALLOWED_HOSTS = ['deployed-site-url', 'localhost']
 - After saving the **settings.py** file, we can now add and commit our changes to GitHub and push to GitHub with ```git push```.
 - Then using ```git push Heroku main``` to deploy to Heroku.
 
-The app should be deployed, albeit without the static files as we are yet to set these up.
+The app should be deployed.
 
 - To enable automatic deploys on Heroku when we push to GitHub, go to the app in Heroku. On the deploy tab, set it to connect to GitHub. Search for your repository and then click *connect*. Then click *Enable Automatic Deploys*.
