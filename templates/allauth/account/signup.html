@@ -5,9 +5,9 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block inner_content %}
-<hr>
-<h2 class="logo-font mb-4 signupheader">{% trans "Sign Up" %}</h2>
-<hr>
+<hr class="allauthhr w-50">
+<h2 class="logo-font signupheader">{% trans "Sign Up" %}</h2>
+<hr  class="allauthhr mb-4 w-50">
 
 <div class="d-flex justify-content-center">
   <form class="signup" id="signup_form" method="post"
@@ -21,7 +21,7 @@
     <button class="btn btn-secondary text-white font-weight-bold rounded" type="submit">{% trans "Sign Up" %}</button>
   </form>
 </div>
-<p class="text-center">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign
-    in</a>.{% endblocktrans %}</p>
+<p class="text-center">{% blocktrans %}Already have an account? Then please <a class="font-weight-bold" href="{{ login_url }}"><u>sign
+    in</u></a>.{% endblocktrans %}</p>
 
 {% endblock %}

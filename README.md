@@ -282,6 +282,8 @@ Please refer to [DEPLOYMENT.md](./DEPLOYMENT.md) file for:
 
 ### <u>Code & Tutorials</u>
 
+[Django Social Authentication with OAuth2](https://www.youtube.com/watch?v=GQySb3W2feo)
+
 ### <u>Media</u>
 
 <strong><u>Images Used:</u></strong>
