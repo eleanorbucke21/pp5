@@ -351,6 +351,14 @@ a.category-badge > span.badge:hover {
     background: rgba(211,211,211,0.8);
 }
 
+/* Contact Form */
+
+.bg-cityBW {
+    background: url('/media/apoc-cityBW.png') no-repeat center center fixed;
+    background-size: cover;
+    padding-bottom: 1%;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Mobile Devices */

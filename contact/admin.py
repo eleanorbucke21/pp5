@@ -10,4 +10,5 @@ class ContactAdmin(admin.ModelAdmin):
         'message',
     ]
 
-    admin.site.register(Contact, ContactAdmin)
+
+admin.site.register(Contact, ContactAdmin)
