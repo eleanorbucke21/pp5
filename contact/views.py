@@ -17,7 +17,7 @@ def contact(request):
             body = {
                     'name': form.cleaned_data['name'],
                     'email': form.cleaned_data['email'],
-                    'subject_question': form.cleaned_data['subject'],
+                    'question_categories': form.cleaned_data['question_categories'],  # noqa
                     'message': form.cleaned_data['message'],
             }
             contact = form.save()
