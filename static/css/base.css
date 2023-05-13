@@ -120,6 +120,12 @@ body {
     background-size: cover;
 }
 
+.off-canvas-wrapper {
+    backface-visibility: hidden;
+    position: relative;
+    width: 100%;
+}
+
 
 /* footer */
 
@@ -131,6 +137,18 @@ body {
     height: 100px;
     margin-top: auto;
     position: absolute;
+}
+
+/* Mail Chimp */
+
+#mc_embed_signup {
+    clear: left;
+    font: 14px Roberto, sans-serif;
+    width: 600px;
+    position: absolute; 
+    bottom: 95px; 
+    left: 0;
+    z-index: 99999999999;
 }
 
 /* Product templates */
