@@ -6,6 +6,7 @@ from django.db.models.functions import Lower
 
 from .models import Product, Category
 from .forms import ProductForm
+from .forms import ReviewForm
 
 
 def all_products(request):
@@ -62,12 +63,31 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = product.reviews.order_by("-created_on")
+    review_form = ReviewForm(request.POST or None)
 
     context = {
         'product': product,
+        'review_form': review_form,
+        "reviewed": False,
+        'reviews': reviews,
     }
 
-    return render(request, 'products/product_detail.html', context)
+    if request.method == "POST":
+        review_form = ReviewForm(data=request.POST)
+        if review_form.is_valid():
+            review_form.instance.name = request.user.username
+            review = review_form.save(commit=False)
+            review.product = product
+            review.save()
+            messages.success(request, 'Review is posted!')
+            return redirect(reverse('product_detail', args=[product.id]))
+
+    return render(
+            request,
+            "products/product_detail.html",
+            context
+    )
 
 
 # Product CRUD #
