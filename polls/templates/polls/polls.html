@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block page_header %}
+{% endblock %}
+{% block content %}
+
+<!-- Polls -->
+
+<div class="polls-bg h-100">
+<div class="container pt-3">
+    <div class="row">
+        <div class="col">
+            
+            <h2 class="logo-font mb-4 text-black font-weight-bold text-center"><u>Vote</u></h2>
+            <hr class="allauthhr">
+
+        </div>
+    </div>
+    <br>
+    <div class="row checkout-container pb-3 px-3 rounded">
+        <div>
+
+            {% for poll in polls %}
+
+            <h2 class="text-center pt-2">{{ poll.question }}</h2>
+
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-group text-center px-3">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="poll" value="option1">
+                            {{ polls.option_one }}
+                        </label> &nbsp;
+                        <label>
+                            <input type="radio" name="poll" value="option2">
+                            {{ polls.option_two }}
+                        </label> &nbsp;
+                        <label>
+                            <input type="radio" name="poll" value="option3">
+                            {{ polls.option_three }}
+                        </label> &nbsp;
+                    </div>
+                </div>
+                <hr />
+                <button type="submit" class="btn btn-secondary text-white font-weight-bold">
+                    Submit
+                </button>
+            </form>
+
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

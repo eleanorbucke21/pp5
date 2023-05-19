@@ -34,6 +34,9 @@ body {
     background-color: #D3D3D3;
 }
 
+.bg-dark-gray {
+    color: #535453;
+}
 /* from Bulma */
 .icon {
     align-items: center;
@@ -377,6 +380,12 @@ a.category-badge > span.badge:hover {
     padding-bottom: 1%;
 }
 
+/* Polls */
+
+.polls-bg {
+    background: url('/media/swamp-city -apoc.png') no-repeat center center fixed;
+    background-size: cover;
+}
 
 /* -------------------------------- Media Queries */
 
