@@ -2,7 +2,7 @@
 
     <!--Logo Button-->
     <nav id="topnav" class="row pt-lg-2 d-none d-lg-flex">
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left d-s-none">
             <a href="{% url 'home' %}" class="nav-link main-logo-link">
                 <img class="img-fluid dclogo"
                     src="https://res.cloudinary.com/dwfsh0lgy/image/upload/v1683660094/pp5-dayscoming/dclogo_rmmolt.png"
@@ -29,13 +29,14 @@
 
        
         <nav class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-
-        <!-- Polls -->
             <ul class="list-inline list-unstyled text-center text-lg-right my-0 text-black font-weight-bold">
+        <!-- Polls -->
+           
                 <li class="list-inline-item dropdown">
                     <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         <div class="text-center">
+                            <div><i class="fa-solid fa-vial-virus" style="color: #000000;"></i></div>
                             <p class="my-0">Polls</p>
                         </div>
                     </a>
@@ -48,20 +49,21 @@
                         {% endif %}
                     </div>
                 </li>
-            </ul>
+           
 
         <!-- Account -->
-            <ul class="list-inline list-unstyled text-center text-lg-right my-0 text-black font-weight-bold">
+            
                 <li class="list-inline-item dropdown">
                     <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         <div class="text-center">
                             <div>
                                 {% if request.user.is_authenticated %}
-                                <span class="col "><i class="fa-solid fa-user" style="color: #000000;"></i></span>
+                                <span class="col ">
+                                    <i class="fa-solid fa-user" style="color: #000000;"></i></span>
                                 {% else %}
                                 <span class="col">
-                                    <i class="fa-solid fa-skull-crossbones" style="color: #000000;"></i>
+                                    <i class="fa-solid fa-user-xmark" style="color: #000000"></i>
                                     {% endif %}
                                 </span>
                             </div>
@@ -104,7 +106,7 @@
     </nav>
     <nav class="row bg-white">
         <nav class="navbar navbar-expand-lg navbar-light w-100">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+            <button class="navbar-toggler mobile-toggle" type="button" data-toggle="collapse" data-target="#main-nav"
                 aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

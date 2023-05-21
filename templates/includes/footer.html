@@ -1,83 +1,86 @@
 <footer class="container-fluid text-center bg-light-gray mt-auto footer-design pt-3">
     <div class="footer navbar-fixed-bottom mt-1 h-75">
         <div class="row">
-            <div class="col-12 col-lg-4 my-auto">
 
+            <!-- Begin Mailchimp Signup Form -->
+            <div class="col-12 col-lg-4 col-md-4 my-auto">
+                <button class="btn btn-secondary text-white font-weight-bold rounded"
+                    onclick="myFunction()">Subscribe</button>
+
+                <div id="mc_embed_signup" class="callout rounded checkout-container" data-closable
+                    style="display: none">
+                    <form
+                        action="https://herokuapp.us21.list-manage.com/subscribe/post?u=7f06747ce902a5168b5aff51c&amp;id=0c8410ffd4&amp;f_id=00ac42e1f0"
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                        target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <h2 class="font-weight-bold text-white">Subscribe</h2>
+                            <div class="indicates-required"><span class="asterisk">*</span> indicates required
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                                </label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
+                                    required>
+                                <span id="mce-EMAIL-HELPERTEXT" class="helper_text color-dark-gray"></span>
+                            </div>
+                            <div id="mce-responses" class="clear foot">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                    name="b_7f06747ce902a5168b5aff51c_0c8410ffd4" tabindex="-1" value=""></div>
+                            <div class="optionalParent">
+                                <div class="clear foot">
+                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                                        class="button">
+                                    <p class="brandingLogo"><a href="http://eepurl.com/ireezM"
+                                            title="Mailchimp - email marketing made easy and fun"><img
+                                                src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--End mc_embed_signup-->
+
+            <!-- Contact Us Form -->
+            <div class="col-12 col-lg-4 col-md-4  my-auto">
                 <a href="{% url 'contact_us' %}" class="contactus font-weight-bold text-black">
                     <h4><i class="fa-solid fa-envelope fa-shake" style="color: #535453;"></i>
                         Contact Us</h4>
                 </a>
-
-                <button class="btn btn-secondary text-white font-weight-bold rounded"
-                    onclick="myFunction()">Subscribe</button>
-
-                <!-- Begin Mailchimp Signup Form -->
-                        <div id="mc_embed_signup" class="callout rounded checkout-container" data-closable style="display: none">
-                            <form
-                                action="https://herokuapp.us21.list-manage.com/subscribe/post?u=7f06747ce902a5168b5aff51c&amp;id=0c8410ffd4&amp;f_id=00ac42e1f0"
-                                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                                class="validate" target="_blank" novalidate>
-                                <div id="mc_embed_signup_scroll">
-                                    <h2 class="font-weight-bold text-white">Subscribe</h2>
-                                    <div class="indicates-required"><span class="asterisk">*</span> indicates required
-                                    </div>
-                                    <div class="mc-field-group">
-                                        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
-                                        </label>
-                                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
-                                            required>
-                                        <span id="mce-EMAIL-HELPERTEXT" class="helper_text color-dark-gray"></span>
-                                    </div>
-                                    <div id="mce-responses" class="clear foot">
-                                        <div class="response" id="mce-error-response" style="display:none"></div>
-                                        <div class="response" id="mce-success-response" style="display:none"></div>
-                                    </div>
-                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
-                                            type="text" name="b_7f06747ce902a5168b5aff51c_0c8410ffd4" tabindex="-1"
-                                            value=""></div>
-                                    <div class="optionalParent">
-                                        <div class="clear foot">
-                                            <input type="submit" value="Subscribe" name="subscribe"
-                                                id="mc-embedded-subscribe" class="button">
-                                            <p class="brandingLogo"><a href="http://eepurl.com/ireezM"
-                                                    title="Mailchimp - email marketing made easy and fun"><img
-                                                        src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-            <!--End mc_embed_signup-->
-
-            <div class="col-12 col-lg-4 my-auto">
-
-                <span class="copyright text-muted">Copyright &copy; Eleanor Bucke PP5 2023</span>
-
             </div>
+
+
 
             <!-- Socials -->
 
-            <div class="col-12 col-lg-4 my-auto">
+            <div class="col-12 col-lg-4 col-md-4  my-auto footer-socials">
 
-            <!-- Facebook -->    
+                <!-- Facebook -->
                 <a href="https://www.facebook.com/profile.php?id=100092519597390" target="_blank" rel="noopener"
-                aria-label="Visit our Facebook page (opens in new tab)">
-                <i class="fa-brands fa-facebook pl-2 fa-3x fa-fw" style="color: #535453;"></i></a>
-            
-            <!-- Instagram -->
-            <a href="https://www.instagram.com" target="_blank" rel="noopener"
-            aria-label="Visit our Instagram page (opens in new tab)">
-            <i class="fa-brands fa-instagram pl-2 fa-3x fa-fw" style="color: #535453;"></i></a>
-            
-            <!-- Github -->    
-                <a href ="https://github.com/eleanorbucke21" target="_blank" rel="noopener"
-                aria-label="Visit my Github page (opens in new tab)">
-                <i class="fa-brands fa-github pl-2 fa-3x fa-fw" style="color: #535453;"></i></a>
+                    aria-label="Visit our Facebook page (opens in new tab)">
+                    <i class="fa-brands fa-facebook pl-2 fa-3x fa-fw" style="color: #535453;"></i></a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in new tab)">
+                    <i class="fa-brands fa-instagram pl-2 fa-3x fa-fw" style="color: #535453;"></i></a>
+
+                <!-- Github -->
+                <a href="https://github.com/eleanorbucke21" target="_blank" rel="noopener"
+                    aria-label="Visit my Github page (opens in new tab)">
+                    <i class="fa-brands fa-github pl-2 fa-3x fa-fw" style="color: #535453;"></i></a>
 
             </div>
+        </div>
+        <div class="row d-flex justify-content-center pt-2">
+            <span class="copyright copyrightext text-muted">Copyright &copy; Eleanor Bucke PP5 2023</span>
         </div>
     </div>
     <!-- Mail Chimp Scripts -->
@@ -110,7 +113,6 @@
                 x.style.display = "none";
             }
         }
-
     </script>
 
 </footer>

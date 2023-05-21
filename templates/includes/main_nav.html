@@ -1,4 +1,4 @@
-<div class="collapse navbar-collapse" id="main-nav">
+<div class="collapse navbar-collapse mobile-nav-drop-list" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -16,7 +16,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="diy-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 DIY
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="camping-link">
+            <div class="dropdown-menu border-0 mobile-nav-drop-list" aria-labelledby="camping-link">
                 <a href="{% url 'products' %}?category=diy" class="dropdown-item">DIY</a>
                 <a href="{% url 'products' %}?category=gardening" class="dropdown-item">Gardening</a>
                 <a href="{% url 'products' %}?category=off_grid_living,off_grid,offgrid_living" class="dropdown-item">Off Grid Living</a>
@@ -27,7 +27,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="food-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Food
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="meals-link">
+            <div class="dropdown-menu border-0 mobile-nav-drop-list" aria-labelledby="meals-link">
                 <a href="{% url 'products' %}?category=food,mres,mre" class="dropdown-item">MRE's</a>
                 <a href="{% url 'products' %}?category=kosher,kosher_mre" class="dropdown-item">Kosher MRE's</a>
                 <a href="{% url 'products' %}?category=halal,halal_mre" class="dropdown-item">Halal MRE's</a>
@@ -39,7 +39,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="protection-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Melee
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="protection-link">
+            <div class="dropdown-menu border-0 mobile-nav-drop-list" aria-labelledby="protection-link">
                 <a href="{% url 'products' %}?category=weapons,melee,protection,protection_melee" class="dropdown-item">Melee</a>
             </div>
         </li>
@@ -48,7 +48,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="camping-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Camping
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="camping-link">
+            <div class="dropdown-menu border-0 mobile-nav-drop-list" aria-labelledby="camping-link">
                 <a href="{% url 'products' %}?category=camping,equipment,camping_equipment" class="dropdown-item">Camping Equipment</a>
                 <a href="{% url 'products' %}?category=tent,shelter,tents" class="dropdown-item">Tents</a>
                 <a href="{% url 'products' %}?category=sleeping_bag,sleeping_bags" class="dropdown-item">Sleeping Bag</a>

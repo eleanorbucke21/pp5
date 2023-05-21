@@ -5,51 +5,71 @@
 
 <!-- Polls -->
 
-<div class="polls-bg h-100">
-<div class="container pt-3">
-    <div class="row">
-        <div class="col">
-            
-            <h2 class="logo-font mb-4 text-black font-weight-bold text-center"><u>Vote</u></h2>
-            <hr class="allauthhr">
+<div class="polls-bg">
+    <div class="container py-3">
+        <div class="checkout-container container-sm pb-3 px-3 rounded">
+            <div class="row">
 
-        </div>
-    </div>
-    <br>
-    <div class="row checkout-container pb-3 px-3 rounded">
-        <div>
+                <div class="col">
 
-            {% for poll in polls %}
+                    <h2 class="logo-font mb-4 text-black font-weight-bold text-center"><u>Vote</u></h2>
+                    <hr class="allauthhr">
 
-            <h2 class="text-center pt-2">{{ poll.question }}</h2>
-
-            <form method="POST">
-                {% csrf_token %}
-                <div class="form-group text-center px-3">
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="poll" value="option1">
-                            {{ polls.option_one }}
-                        </label> &nbsp;
-                        <label>
-                            <input type="radio" name="poll" value="option2">
-                            {{ polls.option_two }}
-                        </label> &nbsp;
-                        <label>
-                            <input type="radio" name="poll" value="option3">
-                            {{ polls.option_three }}
-                        </label> &nbsp;
-                    </div>
                 </div>
-                <hr />
-                <button type="submit" class="btn btn-secondary text-white font-weight-bold">
-                    Submit
-                </button>
-            </form>
+            </div>
+            <br>
+            <div class="row px-3">
+                <div class="text-center mx-auto">
 
-            {% endfor %}
+                    {% for poll in polls %}
+
+                    <h2 class="pt-2">{{ poll.question }}</h2>
+
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="poll" value="option1">
+                                    {{ poll.option_one }}
+                                </label> &nbsp;
+                                <label>
+                                    <input type="radio" name="poll" value="option2">
+                                    {{ poll.option_two }}
+                                </label> &nbsp;
+                                <label>
+                                    <input type="radio" name="poll" value="option3">
+                                    {{ poll.option_three }}
+                                </label> &nbsp;
+                            </div>
+                        </div>
+                        <hr />
+                        <button type="submit" class="btn btn-secondary text-white font-weight-bold">
+                            Submit
+                        </button>
+                    </form>
+                    {% if forloop.counter|divisibleby:3 %}
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
         </div>
     </div>
-</div>
+    {% if is_paginated %}
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            
+            {% if page_obj.has_previous %}
+            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+            
+            {% endif %}
+            {% if page_obj.has_next %}
+
+            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
 </div>
 {% endblock %}
