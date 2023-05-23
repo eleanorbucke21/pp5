@@ -31,15 +31,15 @@ def vote(request, polls_id):
 
     if request.method == 'POST':
 
-        selected_option = request.POST['polls']
-        if selected_option == 'option1':
-            polls.option_one_count += 1
-        elif selected_option == 'option2':
-            polls.option_two_count += 1
-        elif selected_option == 'option3':
-            polls.option_three_count += 1
+        selected_choice = request.POST['polls']
+        if selected_choice == 'choice1':
+            polls.choice_one_count += 1
+        elif selected_choice == 'choice2':
+            polls.choice_two_count += 1
+        elif selected_choice == 'choice3':
+            polls.choice_three_count += 1
         else:
-            return HttpResponse(400, 'Invalid form option')
+            return HttpResponse(400, 'Invalid form choice')
 
         polls.save()
 

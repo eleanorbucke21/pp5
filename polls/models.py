@@ -7,12 +7,12 @@ STATUS = ((0, "Draft"), (1, "Published"))
 class Poll(models.Model):
     approved = models.BooleanField(default=False)
     question = models.TextField()
-    option_one = models.CharField(max_length=30)
-    option_two = models.CharField(max_length=30)
-    option_three = models.CharField(max_length=30)
-    option_one_count = models.IntegerField(default=0)
-    option_two_count = models.IntegerField(default=0)
-    option_three_count = models.IntegerField(default=0)
+    choice_one = models.CharField(max_length=30)
+    choice_two = models.CharField(max_length=30)
+    choice_three = models.CharField(max_length=30)
+    choice_one_count = models.IntegerField(default=0)
+    choice_two_count = models.IntegerField(default=0)
+    choice_three_count = models.IntegerField(default=0)
 
     def total(self):
-        return self.option_one_count + self.option_two_count + self.option_three_count  # noqa
+        return self.choice_one_count + self.choice_two_count + self.choice_three_count  # noqa

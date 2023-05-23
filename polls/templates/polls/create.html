@@ -1,8 +1,12 @@
 {% extends "base.html" %}
-{% block page_header %}
-{% endblock %}
-{% block content %}
 
+{% load static %}
+
+{% block page_header %}
+
+{% endblock %}
+
+{% block content %}
 <!-- Create A Poll-->
 
 <div class="polls-bg h-100">
@@ -26,28 +30,28 @@
                                         </div>
                                     </div>
                                 </div>
-
+            
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <div class="form-group">
-                                            <label for="option1">Option 1</label>
-                                            {% render_field form.option_one class="form-control" %}
+                                            <label for="choice1">choice 1</label>
+                                            {% render_field form.choice_one class="form-control" %}
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="form-group">
-                                            <label for="option2">Option 2</label>
-                                            {% render_field form.option_two class="form-control" %}
+                                            <label for="choice2">choice 2</label>
+                                            {% render_field form.choice_two class="form-control" %}
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="form-group">
-                                            <label for="option3">Option 3</label>
-                                            {% render_field form.option_three class="form-control" %}
+                                            <label for="choice3">choice 3</label>
+                                            {% render_field form.choice_three class="form-control" %}
                                         </div>
                                     </div>
                                 </div>
-
+            
                                 <div class="row">
                                     <hr />
                                     <div class="col-lg-4">
