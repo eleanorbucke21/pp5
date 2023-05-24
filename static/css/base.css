@@ -405,6 +405,15 @@ a.category-badge > span.badge:hover {
     height: 100%;
 }
 
+/* Error Pages */
+
+.bg-error {
+    background: url('/media/errorzombie.png') no-repeat center center fixed;
+    background-size: cover;
+    padding-bottom: 1%;
+    height: 100%;
+}
+
 /* -------------------------------- Media Queries */
 
 @media only screen and (max-width: 992px) {
