@@ -1,67 +1,76 @@
+
 from django.shortcuts import render
 from django.shortcuts import redirect
+
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse
 
 from .forms import CreatePollForm
 from .models import Poll
 
 
-def polls(request):
-    polls = Poll.objects.all()
+def poll(request):
+    poll = Poll.objects.all()
     queryset = Poll.objects.filter(approved=1)
+    print("IN POLLS VIEW")
     context = {
-        'polls': polls
+        'polls': poll
     }
     return render(request, 'polls/polls.html', context)
 
 
 @login_required
-def results(request, polls_id):
-    polls = polls.objects.get(pk=polls_id)
+def vote(request, poll_id):
+    poll = Poll.objects.get(pk=poll_id)
 
-    context = {
-        'polls': polls
-    }
-    return render(request, 'polls/results.html', context)
-
-
-@login_required
-def vote(request, polls_id):
-    polls = Poll.objects.get(pk=polls_id)
+    print("IN VOTE VIEW")
 
     if request.method == 'POST':
 
-        selected_choice = request.POST['polls']
+        selected_choice = request.POST['poll']
         if selected_choice == 'choice1':
-            polls.choice_one_count += 1
+            poll.choice_one_count += 1
         elif selected_choice == 'choice2':
-            polls.choice_two_count += 1
+            poll.choice_two_count += 1
         elif selected_choice == 'choice3':
-            polls.choice_three_count += 1
+            poll.choice_three_count += 1
         else:
             return HttpResponse(400, 'Invalid form choice')
+        poll.save()
+        return redirect('success', poll.id)
+    context = {
+        'poll': poll
+    }
+    return render(request, 'polls/polls.html', context)
 
-        polls.save()
 
-        return redirect('results', polls.id)
+@login_required
+def success(request, poll_id):
+    poll = Poll.objects.get(pk=poll_id)
+    context = {
+        'poll': poll
+    }
+    return render(request, 'polls/success.html', context)
+
+
+@login_required
+def results(request, poll_id):
+    poll = Poll.objects.get(pk=poll_id)
 
     context = {
-        'polls': poll
+        'poll': poll
     }
-    return render(request, 'polls/vote.html', context)
+    return render(request, 'polls/results.html', context)
 
 
 @login_required
 def create(request):
     if request.method == 'POST':
         form = CreatePollForm(request.POST)
-
         if form.is_valid():
             form.save(commit=False)
-
-            return redirect('polls')
+            return redirect('poll')
     else:
         form = CreatePollForm()
-
     context = {'form': form}
     return render(request, 'polls/create.html', context)

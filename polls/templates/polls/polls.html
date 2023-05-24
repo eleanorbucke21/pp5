@@ -8,9 +8,9 @@
 <div class="polls-bg">
     <div class="container py-3">
         <div class="checkout-container container-sm pb-3 px-3 rounded">
-            <div class="row">
+            <div class="row polls-forms">
 
-                <div class="col">
+                <div class="col-lg-12 col-sm-12 text-center">
 
                     <h2 class="logo-font mb-4 text-black font-weight-bold text-center"><u>Vote</u></h2>
                     <hr class="allauthhr">
@@ -25,7 +25,7 @@
 
                     <h2 class="pt-2">{{ poll.question }}</h2>
 
-                    <form method="POST">
+                    <form action="{% url 'vote' poll.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-group">
                             <div class="radio">

@@ -490,6 +490,10 @@ a.category-badge > span.badge:hover {
     .bg-grocery {
         zoom: 1.8;
     }
+
+    .polls-forms {
+        zoom: 3;
+    }
 }
 
 

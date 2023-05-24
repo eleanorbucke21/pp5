@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block page_header %}
+{% endblock %}
+{% block content %}
+
+
+<div class="polls-bg">
+    <div class="container py-3">
+        <div class="checkout-container container-sm pb-3 px-3 rounded">
+            <h2>Thank you for your vote!</h2>
+            <span class="pull-right">
+                <a href="{% url 'results' poll.id %}" class="btn btn-secondary text-white font-weight-bold">View Results</a> &nbsp;
+            </span>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
