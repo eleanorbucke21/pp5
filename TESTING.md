@@ -47,16 +47,23 @@ We used [W3C Markup Validation Service](https://validator.w3.org/) to validate a
 ### CSS Validation
 We used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate all CSS files by direct input.
 
-|Page | Mobile |
-| ------------- | ------------- |
-| Index | |
-| Register | |
-| Login | |
-| Logout | |
-| Profile | |
-| Checkout | |
-| Shopping Bag | |
-| Order Confirmation | |
+|Page | Mobile  | Computer|
+| ------------- | ------------- |------------- |
+| Index | | |
+| Register | | |
+| Login | | |
+| Logout | | |
+| Profile | | |
+| All Products | | |
+| Product Detail | | |
+| Checkout | | |
+| Shopping Bag | | |
+| Order Confirmation | | |
+| Contact Us | | |
+| Poll | | |
+| Poll Success | | |
+| Poll Results | | |
+| Poll Create | | |
 
 ### JavaScript Validation
 We used [JSHint](https://jshint.com/) to validate all JavaScript and JQuery files
@@ -80,19 +87,35 @@ At the project inception, we installed [PyCodeStyle](https://pycodestyle.pycqa.o
 | Login | | |
 | Logout | | |
 | Profile | | |
+| All Products | | |
+| Product Detail | | |
 | Checkout | | |
 | Shopping Bag | | |
 | Order Confirmation | | |
+| Contact Us | | |
+| Poll | | |
+| Poll Success | | |
+| Poll Results | | |
+| Poll Create | | |
+
 
 In order to fully validate the page, we used the WAVE Chrome extension. This enabled our team to test the pages that require user authentication.
 
 | Page | WAVE This Page Result |
-| ------------- | -------------
-| Index | |
-| Register | |
-| Login | |
-| Logout | |
+|Page | Computer|
+| ------------- | ------------- |
+| Index | | 
+| Register  | |
+| Login |  |
+| Logout  | |
 | Profile | |
-| Checkout | |
-| Shopping Bag | |
+| All Products | | 
+| Product Detail | |
+| Checkout | | 
+| Shopping Bag  | |
 | Order Confirmation | |
+| Contact Us | | 
+| Poll | | 
+| Poll Success | | 
+| Poll Results | | 
+| Poll Create | | 

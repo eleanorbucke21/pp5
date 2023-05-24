@@ -67,14 +67,17 @@ HomePage <strong><u>(Not logged in)</u></strong>
 - As a user I want to be able to buy products.
 - As a user I want to receive a confirmation notification after I have bought something.
 - As a user I want to receive an email confirmation after I have bought something.
+- As a user I want to be able to use the contact form.
 
 Homepage <strong><u>(Logged in) </u></strong>
 - As a user I want to be able to buy products.
 - As a user I want to be able to logout.
+- I want to be able to see that I am logged in via the user icon. 
 
 Header/Navbar<strong><u>(Not logged in)</u></strong>
 - I want to be able to see the website name.
-- I want to be able to search in the search bar. 
+- I want to be able to search in the search bar.
+- I want to be able to see that I am not logged in via the user icon with an x. 
 
 Register
 
@@ -139,13 +142,30 @@ Checkout Page
 Admin Page
 
 <i>To access the admin page type <strong>/admin</strong> at the end of the address bar</i>
-- As an admin I want to be able to add posts.
-- As an admin I want to be able to approve or not approve posts.
-- As an admin I want to be able to approve or not approve comments. 
+- As an admin I want to be able to approve or not approve polls.
+- As an admin I want to be able to view the users.
+- As an admin I want to be able to review the contact forms that had been sent in.  
+
+Contact Us Page
+
+- As a user I want to be able to contact the admin of the site.
+- As a user I want to recieve a notification that the contact form has been sent.
+
+Polls Page <strong><u>(Not logged in)</u></strong>
+
+- As a user I want to be able to see the polls.
+
+Polls Page <strong><u>(Logged in)</u></strong>
+
+- As a user I want to be able to vote.
+- As a user I want to be able to see the results.
+- As a user I want to be able to create a poll.
+- As a user I want to be able to receive a notification that my poll is under review.
 
 # Features 
 ## Navigation Bar
 - Featured at the top of the page with the name of the website on the left.
+- It contains the links for user account, polls and the shopping bag. 
 - The navigation bar also has a register, login, my Account and logout depending on if user is logged in. 
 - The navigation is also responsive to smaller screens with a toggle option on the navbar, which hides the links till tapped.
 
@@ -175,14 +195,25 @@ Admin Page
 - A user is asked if they are sure they want to logout.
 - After clicking <i>signout</i> they are redirected to the home page.
 
-### <u>Product Detail</u>
+## Product Detail
+<u><strong>When user is  not logged in:</strong></u>
 - The product detail page displays the description of the product.
 - The product detail page displays an image of the product.
 - The product detail pay displays the price. 
+- The user can read the reviews below the product.
 
 <u><strong>When user is logged in:</strong></u>
-- The post has two buttons underneath displaying the likes and dislikes. <br>
+- The user can leave a review on the product.
 
+## Polls Tab 
+<u><strong>When user is  not logged in:</strong></u>
+- The user can view the polls.
+
+<u><strong>When user is logged in:</strong></u>
+- The user can view the polls
+- The user can vote in the polls.
+- The user can view the results.
+- The user can create a poll.
 
 # Typography and Color Scheme
 
@@ -196,7 +227,9 @@ The fonts used in this project were:
 The colout scheme used was:
 - Dark gray #535453
 - Light gray #D3D3D3
-- Red #F80A0A
+
+<img src="markdown/color-scheme.png" width=500>
+
 
 ## <strong>Wireframes</strong>
 ### Home Page
@@ -282,22 +315,35 @@ Please refer to [DEPLOYMENT.md](./DEPLOYMENT.md) file for:
 
 ### <u>Code & Tutorials</u>
 
-[Django Social Authentication with OAuth2](https://www.youtube.com/watch?v=GQySb3W2feo)
+[CREATING A POLL APP IN DJANGO](https://prettyprinted.com/tutorials/creating-a-poll-app-in-django/)
 
 ### <u>Media</u>
 
 <strong><u>Images Used:</u></strong>
-- [12-Halal.jpg](https://de.homeloft.eu/products/xmre-halal-1000-meals-ready-to-eat-mre-military-grade-ration-extended-shelf-life-no-refrigeration-for-law-enforcement-emergency-food-supply-outdoor-enthusiasts-12-meals-6-menus-usa-made).
 
-- [12-Kosher-Mre's-with-heaters.jpg](https://www.amazon.com/XMRE-Kosher-Meals-Ready-Refrigeration/dp/B087D6Q5G6)
-
-- [12-MRE's-with-heaters.jpg]()
+<u>Background Images</u>
 
 - DaysComing.png created in [Adobe Express](https://https://www.adobe.com/express/).
 
 - [LOUgrocery.png](https://www.artstation.com/artwork/mDDV8Y) Edited in Adobe Photoshop. 
 
 - [TWD.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wallpaperflare.com%2Fcar-city-destruction-road-the-walking-dead-wallpaper-bntiu&psig=AOvVaw1V13uFa9s2Sk_iFQ-gHhVL&ust=1681290834624000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMC7jcq-of4CFQAAAAAdAAAAABAE) Edited in Adobe Photoshop. 
+
+- [apoc-cityBW.png](https://images.adsttc.com/media/images/6419/372c/bf9a/f501/70e9/6c60/newsletter/architecture-after-civilization-design-in-the-post-apocalypse_4.jpg?1679374132) Edited in Adobe Photoshop.
+
+- [city-overgrown-apoc.jpg](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pxfuel.com%2Fen%2Fdesktop-wallpaper-cldup&psig=AOvVaw0Vy8TIR0xKdTAqIH3d8ug4&ust=1683034596675000&source=images&cd=vfe&ved=0CBMQjhxqFwoTCOi8wsye1P4CFQAAAAAdAAAAABAI) Edited in Adobe Photoshop. 
+
+- [swamp-city-apoc.png](https://cdna.artstation.com/p/assets/images/images/054/294/900/large/suresh-karunakaran-asset.jpg?1664215405) Edited in Adobe Photoshop.
+
+- [errorzombie.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fscienceofparkinsons.com%2Ftag%2Fwhite-zombie%2F&psig=AOvVaw0vVq4QaXO9HLMY3O0UExHB&ust=1685040378320000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOiVpNvOjv8CFQAAAAAdAAAAABAJ)
+
+
+<u>Product Images</u>
+- [12-Halal.jpg](https://de.homeloft.eu/products/xmre-halal-1000-meals-ready-to-eat-mre-military-grade-ration-extended-shelf-life-no-refrigeration-for-law-enforcement-emergency-food-supply-outdoor-enthusiasts-12-meals-6-menus-usa-made).
+
+- [12-Kosher-Mre's-with-heaters.jpg](https://www.amazon.com/XMRE-Kosher-Meals-Ready-Refrigeration/dp/B087D6Q5G6)
+
+- [12-MRE's-with-heaters.jpg]()
 
 - [book1.jpg](https://www.amazon.co.uk/Preppers-Long-Term-Survival-Guide-Grid/dp/1612432735/ref=asc_df_1612432735/?tag=googshopuk-21&linkCode=df0&hvadid=310834580283&hvpos=&hvnetw=g&hvrand=3955009589656556194&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007880&hvtargid=pla-432398661566&psc=1&th=1&psc=1)
 

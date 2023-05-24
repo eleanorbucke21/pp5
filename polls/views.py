@@ -4,6 +4,7 @@ from django.shortcuts import redirect
 
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
+from django.contrib import messages
 
 from .forms import CreatePollForm
 from .models import Poll
@@ -70,7 +71,9 @@ def create(request):
         if form.is_valid():
             form.save(commit=False)
             return redirect('poll')
+            messages.success(request, 'Your poll is under review!')
     else:
         form = CreatePollForm()
+        messages.error(request, 'There was an error Please try again')
     context = {'form': form}
     return render(request, 'polls/create.html', context)
