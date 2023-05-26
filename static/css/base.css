@@ -456,7 +456,7 @@ a.category-badge > span.badge:hover {
     }
 
     .coming-logo {
-        letter-spacing: 4%;
+        letter-spacing: 4px;
     }
 
     .site-heading {
@@ -520,6 +520,10 @@ a.category-badge > span.badge:hover {
 
     .error-container {
         zoom: 3;
+    }
+
+    .contact-container {
+        zoom: 2.5;
     }
 }
 
