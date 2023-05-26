@@ -31,17 +31,25 @@
 ## Automated Testing and Validation
 ### HTML Validation
 We used [W3C Markup Validation Service](https://validator.w3.org/) to validate all the HTML files by direct input:
-|Page | Mobile |
-| ------------- | ------------- |
-| Index | |
-| Register | |
-| Login | |
-| Logout | |
-| Profile | |
-| Checkout | |
-| Shopping Bag | |
-| Order Confirmation | |
-
+|Page |Pass/Fail | images |
+| ------------- | ------------- |------------- |
+| Index | :heavy_check_mark: | |
+| Register |:heavy_check_mark: | |
+| Login |:heavy_check_mark: ||
+| Logout |:heavy_check_mark: ||
+| Profile |:heavy_check_mark: ||
+| All Products|:heavy_check_mark: ||
+|Product Detail |:heavy_check_mark: ||
+|Add Product (admin) |:heavy_check_mark: ||
+| Edit Product (admin) |:heavy_check_mark: ||
+| Shopping Bag |:heavy_check_mark: ||
+| Checkout |:heavy_check_mark: ||
+| Order Success |:heavy_check_mark: ||
+|Contact Us|:heavy_check_mark: ||
+|Poll|:heavy_check_mark: ||
+|Poll Success|:heavy_check_mark: ||
+|Poll Result|:heavy_check_mark: ||
+|Poll Create |:heavy_check_mark: ||
 
 
 ### CSS Validation
@@ -49,21 +57,23 @@ We used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to va
 
 |Page | Mobile  | Computer|
 | ------------- | ------------- |------------- |
-| Index | | |
-| Register | | |
-| Login | | |
-| Logout | | |
-| Profile | | |
-| All Products | | |
-| Product Detail | | |
-| Checkout | | |
-| Shopping Bag | | |
-| Order Confirmation | | |
-| Contact Us | | |
-| Poll | | |
-| Poll Success | | |
-| Poll Results | | |
-| Poll Create | | |
+| Index | :heavy_check_mark: |<img src="markdown/htmlvalidation.png"> |
+| Register |:heavy_check_mark: | <img src="markdown/htmlvalidation.png">|
+| Login |:heavy_check_mark: |<img src="markdown/htmlvalidation.png">|
+| Logout |:heavy_check_mark: |<img src="markdown/htmlvalidation.png">|
+| Profile |:heavy_check_mark: |<img src="markdown/htmlvalidation.png">|
+| All Products|:heavy_check_mark: |<img src="markdown/htmlvalidation.png">|
+|Product Detail |:heavy_check_mark: |<img src="markdown/htmlvalidation.png">|
+|Add Product (admin) |:heavy_check_mark: |<img src="markdown/htmlvalidation.png">|
+| Edit Product (admin) |:heavy_check_mark: |<img src="markdown/htmlvalidation.png">|
+| Shopping Bag |:heavy_check_mark: |<img src="markdown/htmlvalidation.png">|
+| Checkout |:heavy_check_mark: |<img src="markdown/htmlvalidation.png">|
+| Order Success |:heavy_check_mark: |<img src="markdown/htmlvalidation.png">|
+|Contact Us|:heavy_check_mark: |<img src="markdown/htmlvalidation.png">|
+|Poll|:heavy_check_mark: |<img src="markdown/htmlvalidation.png">|
+|Poll Success|:heavy_check_mark: |<img src="markdown/htmlvalidation.png">|
+|Poll Result|:heavy_check_mark: |<img src="markdown/htmlvalidation.png">|
+|Poll Create |:heavy_check_mark: |<img src="markdown/htmlvalidation.png">|
 
 ### JavaScript Validation
 We used [JSHint](https://jshint.com/) to validate all JavaScript and JQuery files
@@ -74,6 +84,16 @@ We used [JSHint](https://jshint.com/) to validate all JavaScript and JQuery file
 ### Python Validation
 At the project inception, we installed [PyCodeStyle](https://pycodestyle.pycqa.org/en/latest/intro.html#configuration) in our workspace fixed errors when encountered throughout the development process. We also used [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) to lint our Python code.
 
+| Application | Pass | Images |
+| ------------- | ------------- |------------- |
+| Bag |:heavy_check_mark: | <img src="markdown/pythonvalidation.png" height="60"> |
+| Checkout |:heavy_check_mark: | <img src="markdown/pythonvalidation.png" height="60"> |
+| Contact |:heavy_check_mark: | <img src="markdown/pythonvalidation.png" height="60"> |
+| DaysComing |:heavy_check_mark: |  <img src="markdown/pythonvalidation.png" height="60">|
+| Home | :heavy_check_mark: | <img src="markdown/pythonvalidation.png" height="60"> |
+| Polls | :heavy_check_mark: | <img src="markdown/pythonvalidation.png" height="60"> |
+| Products| :heavy_check_mark: | <img src="markdown/pythonvalidation.png" height="60"> |
+| Profiles | :heavy_check_mark: | <img src="markdown/pythonvalidation.png" height="60">|
 
 
 ### Lighthouse Report
@@ -84,19 +104,21 @@ At the project inception, we installed [PyCodeStyle](https://pycodestyle.pycqa.o
 | ------------- | ------------- |------------- |
 | Index | | |
 | Register | | |
-| Login | | |
-| Logout | | |
-| Profile | | |
-| All Products | | |
-| Product Detail | | |
-| Checkout | | |
-| Shopping Bag | | |
-| Order Confirmation | | |
-| Contact Us | | |
-| Poll | | |
-| Poll Success | | |
-| Poll Results | | |
-| Poll Create | | |
+| Login | ||
+| Logout | ||
+| Profile | ||
+| All Products| ||
+|Product Detail | ||
+|Add Product (admin) | ||
+| Edit Product (admin) | ||
+| Shopping Bag | ||
+| Checkout | ||
+| Order Success | ||
+|Contact Us| ||
+|Poll| ||
+|Poll Success| ||
+|Poll Result| ||
+|Poll Create |||
 
 
 In order to fully validate the page, we used the WAVE Chrome extension. This enabled our team to test the pages that require user authentication.
