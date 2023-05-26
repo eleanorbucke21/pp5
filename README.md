@@ -195,6 +195,14 @@ Polls Page <strong><u>(Logged in)</u></strong>
 - A user is asked if they are sure they want to logout.
 - After clicking <i>signout</i> they are redirected to the home page.
 
+## All Products Page
+<u><strong>When admin is not logged in:</strong></u>
+- This displays all the products.
+
+## All Products Page
+<u><strong>When admin is logged in:</strong></u>
+- This displays all the products.
+- Can select a product to edit.
 ## Product Detail
 <u><strong>When user is  not logged in:</strong></u>
 - The product detail page displays the description of the product.
@@ -205,6 +213,9 @@ Polls Page <strong><u>(Logged in)</u></strong>
 <u><strong>When user is logged in:</strong></u>
 - The user can leave a review on the product.
 
+## Bag page
+- Can see what is in your bag.
+
 ## Polls Tab 
 <u><strong>When user is  not logged in:</strong></u>
 - The user can view the polls.
@@ -214,6 +225,25 @@ Polls Page <strong><u>(Logged in)</u></strong>
 - The user can vote in the polls.
 - The user can view the results.
 - The user can create a poll.
+
+## Toasts
+These are available when a user:
+- Log in
+- Register
+- Logout
+- Leave a review
+- Add a product to the bag
+- When order is processed
+- Create a poll
+- Submit the contact form
+- admin edits a product
+- admin adds a product
+
+
+# Future Features 
+- In the future I would like to enable editing reviews.
+- In the future I would like to enable deleting reviews.
+<br>
 
 # Typography and Color Scheme
 
@@ -334,6 +364,10 @@ Please refer to [DEPLOYMENT.md](./DEPLOYMENT.md) file for:
 ---
 
 ## <strong>Credits</strong>
+
+- Credit to [Code Institute's](https://codeinstitute.net/) Boutique Ado walkthrough
+- Credit to the class of LC-ETB Coding Careers for Women with helping when I was stuck.
+
 ### <u>Content</u>
 
 ### <u>Code & Tutorials</u>
