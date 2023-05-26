@@ -272,22 +272,45 @@ GitHub Projects was used to manage the development of the site. It helped our te
 - [HTML](https://en.wikipedia.org/wiki/HTML5) - Add content and formatting to web page.
 - [CSS](https://en.wikipedia.org/wiki/CSS) - Add styling and colours to web page.
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - Add interactive features to web page.
+- [Python](https://www.python.org/) was used for the back end programming of the site.
+
+
+### <u>Technologies Used</u>
 - [Django](https://en.wikipedia.org/wiki/Django_(web_framework)) - A Python-based web framework that follows the model–template–views (MTV) architectural pattern. 
+- [Bootstrap4 - v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) was used as the frontend framework.
 
-### <u>Frameworks, Libraries and Programs Used</u>
+### <u>Databases Used</u>
+- [ElephantSQL](https://www.elephantsql.com/) - Also known as postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance. 
+- [DB.SQLITE3](https://docs.djangoproject.com/en/4.1/ref/databases/#sqlite-notes) was the database used for the project (development).
 
+### <u>Programmes and Applications Used</u>
 - [Gitpod](https://gitpod.io/) - web-based editor optimised for debugging, testing, syntax highlighting and extension support.
 - [Git](https://git-scm.com/) - used to allow for tracking of any changes in the code and for the version control.
 - [Github](https://github.com/) - used to host the project files and host webpage onto the internet.
 - [Heroku](https://www.heroku.com/) - A cloud platform service that supports several programming languages.
-- [ElephantSQL](https://www.elephantsql.com/) - Also known as postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance.
 - [Fontawesome](https://fontawesome.com/) - to insert icons in the website to make site more visually appealing and easy to navigate.
 - [Google Fonts](https://fonts.google.com/) - used to import fonts in the style.css stylesheet.
 - [Favicon](https://favicon.io/) - to insert icons in the website to make site more visually appealing.
 - [Adobe Express](https://https://www.adobe.com/express/) - Used to design the logo.
 - [Abdobe Photoshop](https://www.adobe.com/ie/products/photoshop.html) - Used to style the images used.
----
 
+### Libraries and Packages Used
+- [django-allauth==0.41.0](https://django-allauth.readthedocs.io/en/latest/) is an integrated set of Django applications dealing with account authentication, registration, management, and third-party (social) account authentication.
+- [django-countries==7.2.1](https://pypi.org/project/django-countries/7.2.1/) was the Django application used to provide country choices for use with forms, and a country field for models.
+- [django-crispy-forms==1.14.0](https://pypi.org/project/django-crispy-forms/) was used to build programmatic reusable layouts out of form components.
+- [django-storages==1.13.2](https://django-storages.readthedocs.io/en/latest/) - collection of custom storage backends for Django
+- [django-widget-tweaks==1.4.12](https://pypi.org/project/django-widget-tweaks/)Tweak the form field rendering in templates, not in python-level form definitions. Altering CSS classes and HTML attributes is supported.
+- [gunicorn==20.1.0](https://gunicorn.org/) - a Python WSGI HTTP Server that allows us to run any Python application concurrently by running multiple processes within a single dyno.
+- [jmespath==1.0.1](https://jmespath.org/tutorial.html)a query language for search JSON documents
+- [oauthlib==3.2.2](https://oauthlib.readthedocs.io/en/latest/)a framework which implements the logic of OAuth1 or OAuth2 without assuming a specific HTTP request object or web framework
+- [Pillow==9.4.0](https://pypi.org/project/Pillow/) - a required Python imaging library used to enable handling of images.
+- [psycopg2==2.9.5](https://pypi.org/project/psycopg2/) - a postgresql database adapter for python and used to connect with our postgres database.
+- [requests-oauthlib==1.3.1](https://oauthlib.readthedocs.io/en/latest/)a framework which implements the logic of OAuth1 or OAuth2 without assuming a specific HTTP request object or web framework
+
+- [stripe==5.2.0](https://stripe.com/docs?utm_campaign=paid_brand-IE_en_Search_Brand_Stripe-1615558792&utm_medium=cpc&utm_source=google&ad_content=604147516527&utm_term=stripe&utm_matchtype=e&utm_adposition=&utm_device=c&gclid=CjwKCAjwscGjBhAXEiwAswQqNAPpj1TR69CT0yDVLOlLVRuJSYLbi7hlrBKVWkFRMeDE8h4nGIM7mxoCzF8QAvD_BwE)a payment services provider that lets merchants accept credit and debit cards or other payments.
+
+
+---
 # **TESTING**
 Please refer to [TESTING.md](./TESTING.md) file for:
 * Automated Testing and Validation Results

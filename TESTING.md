@@ -14,13 +14,14 @@
     * [Full Testing](#full-testing)
 * [Bugs, Errors & Solutions](#bugs-found-during-testing-and-development-phase)
     * [Solved Bugs](#solved-bugs)
-    * [Known Bugs](#known-bugs)
+
 ---
 
 ## <strong>Testing</strong>
 - [W3C Markup Validation Serice](https://validator.w3.org/) was used to test for error codes in the HTML.
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)  was used to test for error codes in the CSS.
 - [CI Python Linter](https://pep8ci.herokuapp.com/) was used to detect errors and potential problems in Python code.
+- [JsHint](https://jshint.com/) was used to detect errors and potential problems in JavaScript code.
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
     was used during the development process to test, debug, explore and modify HTML elements, and to test responsiveness in different screen sizes.
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used for improving the quality of web page. It has audits for performance, accessibility, progressive web apps, SEO, and more.
@@ -57,12 +58,18 @@ We used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to va
 | ------------- | ------------- |------------- |
 | static/base.css | :heavy_check_mark: |<img src="markdown/cssvalidation.png"> |
 | profile/static/css/base.css | :heavy_check_mark: |<img src="markdown/cssvalidation.png"> |
+<br>
 ### JavaScript Validation
 We used [JSHint](https://jshint.com/) to validate all JavaScript and JQuery files
 | Page | Result | Test Details & Screenshots |
 | ---- | :-: | -------------------------- |
-| [add-here-js-file-path] | [add-here-if-error-number] error and [add-here-if-warning-number] warning | [add-here-validation-image] |
-
+| templates/includes/footer.html |  2 warnings  | <img src="markdown/jsfooter.png"> |
+| bag/templates/bag/bag.html |  3 warnings  | <img src="markdown/jsbag.png"> |
+| products/templates/products/add_product.html |  1 warning  | <img src="markdown/jsaddaproduct.png"> |
+| products/templates/products/products.html |  3 warnings  | <img src="markdown/jsproducts.png"> |
+| products/templates/products/includes/quantity_input_script.html |  3 warnings  | <img src="markdown/jsQINS.png"> |
+| templates/allauth/account/email.html |  2 warnings  | <img src="markdown/jsemail.png"> |
+<br>
 ### Python Validation
 At the project inception, we installed [PyCodeStyle](https://pycodestyle.pycqa.org/en/latest/intro.html#configuration) in our workspace fixed errors when encountered throughout the development process. We also used [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) to lint our Python code.
 
@@ -77,11 +84,9 @@ At the project inception, we installed [PyCodeStyle](https://pycodestyle.pycqa.o
 | Products| :heavy_check_mark: | <img src="markdown/pythonvalidation.png" height="60"> |
 | Profiles | :heavy_check_mark: | <img src="markdown/pythonvalidation.png" height="60">|
 
+<br>
 
-### Lighthouse Report
-[Chrome DevTools' Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to test the performance, accessibility, best practices and SEO of the site
-
-### <u>Lighthouse</u>
+## <u>Lighthouse</u>
 |Page | Mobile  | Computer|
 | ------------- | ------------- |------------- |
 | Index |<img src="markdown/indexmob.png"> |<img src="markdown/indexcomp.png">|
@@ -331,3 +336,13 @@ iphone 12 pro | No appearance, responsiveness nor functionality issues. | Pass
 |--- | --- | --- |
 |Can create a poll |Can create a poll | Pass |
 | On submission of poll | Notification shown that poll is under approval | Pass |
+
+---
+# Bugs
+
+### Solved Bugs
+
+| # | Bugs, Errors and Issues | Evidence |Solutions | Evidence of Solutions |
+| --- | --- | --- |  --- | --- |
+|1 | Pop Up would open when ever the page refreshed or went to new page | <img src="markdown/bug_popup.png"> | solution was to change the display option | <img src="markdown/bug_popup(fixed).png"> |
+
