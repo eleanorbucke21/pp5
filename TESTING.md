@@ -59,8 +59,10 @@ We used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to va
 | static/base.css | :heavy_check_mark: |<img src="markdown/cssvalidation.png"> |
 | profile/static/css/base.css | :heavy_check_mark: |<img src="markdown/cssvalidation.png"> |
 <br>
+
 ### JavaScript Validation
 We used [JSHint](https://jshint.com/) to validate all JavaScript and JQuery files
+
 | Page | Result | Test Details & Screenshots |
 | ---- | :-: | -------------------------- |
 | templates/includes/footer.html |  2 warnings  | <img src="markdown/jsfooter.png"> |
@@ -69,7 +71,9 @@ We used [JSHint](https://jshint.com/) to validate all JavaScript and JQuery file
 | products/templates/products/products.html |  3 warnings  | <img src="markdown/jsproducts.png"> |
 | products/templates/products/includes/quantity_input_script.html |  3 warnings  | <img src="markdown/jsQINS.png"> |
 | templates/allauth/account/email.html |  2 warnings  | <img src="markdown/jsemail.png"> |
+
 <br>
+
 ### Python Validation
 At the project inception, we installed [PyCodeStyle](https://pycodestyle.pycqa.org/en/latest/intro.html#configuration) in our workspace fixed errors when encountered throughout the development process. We also used [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) to lint our Python code.
 
