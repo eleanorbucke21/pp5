@@ -11,8 +11,10 @@ Days coming is my 5th milestone project for Code Institute in Diploma in Softwar
 
 :open_file_folder: [Github Repository](https://github.com/eleanorbucke21/PP4)
 
+---
 **TABLE OF CONTENTS**
 * [USER EXPERIENCE](#user-experience)
+      * [Agile](###agile)
 * [User Stories](#user-stories)
 * [Features](#features)
     * [Navigation](##Navigation)
@@ -54,7 +56,7 @@ Days coming is my 5th milestone project for Code Institute in Diploma in Softwar
 
 ### Agile
 
-I implemented agile methodology when creating this website. The link to the project board can be found [here] ()
+I implemented agile methodology when creating this website. The link to the project board can be found [here] (https://github.com/users/eleanorbucke21/projects/11)
 
 ### User Stories
 
