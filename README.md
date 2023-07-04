@@ -56,7 +56,7 @@ Days coming is my 5th milestone project for Code Institute in Diploma in Softwar
 
 ### Agile
 
-I implemented agile methodology when creating this website. The link to the project board can be found [here](https://github.com/users/eleanorbucke21/projects/11)
+I implemented agile methodology when creating this website. The link to the project board can be found [here](https://github.com/users/eleanorbucke21/projects/11).
 
 ### User Stories
 
