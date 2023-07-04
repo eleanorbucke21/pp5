@@ -30,7 +30,7 @@
 ## Automated Testing and Validation
 ### HTML Validation
 We used [W3C Markup Validation Service](https://validator.w3.org/) to validate all the HTML files by direct input:
-|Page |Pass/Fail | images |
+|Page | Pass/Fail  | Results |
 | ------------- | ------------- |------------- |
 | Index | :heavy_check_mark: |<img src="markdown/htmlvalidation.png">  |
 | Register |:heavy_check_mark: | <img src="markdown/htmlvalidation.png"> |
@@ -54,7 +54,7 @@ We used [W3C Markup Validation Service](https://validator.w3.org/) to validate a
 ### CSS Validation
 We used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate all CSS files by direct input.
 
-|Page | Mobile  | Computer|
+|Page | Pass/Fail  | Results |
 | ------------- | ------------- |------------- |
 | static/base.css | :heavy_check_mark: |<img src="markdown/cssvalidation.png"> |
 | profile/static/css/base.css | :heavy_check_mark: |<img src="markdown/cssvalidation.png"> |
